@@ -23,19 +23,27 @@ The honeypot itself is upstream [T-Pot](https://github.com/telekom-security/tpot
 
 ## Findings
 
-Figures are from the 2026-08-16 report, covering roughly eight days of continuous collection (2026-08-09 onward, plus an earlier partial capture on 2026-07-18).
+Figures are from the 2026-08-30 report, covering three weeks of continuous collection (2026-08-09 through 2026-08-30, plus an earlier partial capture on 2026-07-18).
 
-**132,409 events, 2,080 unique attacker IPs**
+**337,066 events, 5,190 unique attacker IPs**
 
-By source: Suricata 99,710, p0f 22,374, honeypots 10,325. A further 65,790 events were excluded as allowlisted or private. Suricata and p0f observe all traffic crossing the host, including its own outbound connections and administrative access, so filtering those out is necessary to keep attacker metrics honest.
+By source: Suricata 258,284, p0f 43,344, honeypots 35,438. A further 181,823 events were excluded as allowlisted or private. Suricata and p0f observe all traffic crossing the host, including its own outbound connections and administrative access, so filtering those out is necessary to keep attacker metrics honest.
 
 ### Traffic shape
 
-Port 22 draws the most attention by a wide margin (8,592 events), then 80 (4,091) and 443 (3,178). Port 64295, the non-standard management port, recorded 14 events. That is a small number but a useful one: moving SSH to a high port does not make it invisible, because scanners sweep there too.
+Web ports now lead: 80 draws 17,799 events, then 22 at 15,760 and 443 at 14,448. Earlier in the collection window SSH was ahead of both, so HTTP probing has grown faster than SSH brute-forcing over three weeks.
 
-Volume concentrates in the United States (3,624), China (3,364), Vietnam (1,251), the Netherlands (1,086), and Indonesia (938).
+Port 64295, the non-standard management port, recorded 40 events. That is a small number but a useful one: moving SSH to a high port does not make it invisible, because scanners sweep there too.
 
-Several of the highest-volume sources are rented cloud infrastructure rather than compromised endpoints, including AWS EC2 in `us-east-1` and `ca-central-1`, Tencent Cloud, and Microsoft Azure. Attack traffic originating from the same providers that host the target is routine.
+Volume concentrates in the United States (19,023), China (4,392), the Netherlands (3,819), Sweden (2,084), and Singapore (2,052).
+
+### Cloud infrastructure as the dominant platform
+
+Eight of the twenty highest-volume sources are Google Cloud, spread across `us-west1`, `us-east4`, `europe-west4`, `asia-southeast1`, `us-west2`, and `us-east1`. The two heaviest sources overall are GCP addresses at 2,372 and 2,356 events. AWS (`eu-north-1`), Microsoft Azure (`westus3`), Tencent Cloud, OVH, and Akamai also appear near the top.
+
+This is why the United States leads the country table by a factor of four. That figure reflects datacenter geography, not attacker geography, and reading it as the latter would be a mistake.
+
+Three consecutive addresses in one `/24` (`34.34.225.111`, `.145`, `.169`) contributed 2,353 events between them, all Google Cloud `us-east1`.
 
 ### Brute-force activity
 
@@ -43,25 +51,27 @@ Twenty sources crossed the >= 5 authentication-attempt threshold. The most persi
 
 | IP | Auth attempts | Origin |
 |---|---:|---|
+| `91.92.40.36` | 425 | Amsterdam, NL (TechTies) |
 | `220.168.118.133` | 368 | Changsha, CN |
+| `51.75.200.186` | 248 | Roubaix, FR (OVH) |
 | `160.187.174.22` | 247 | Deli Serdang, ID |
 | `106.75.216.134` | 223 | Yangpu, CN (UCloud) |
-| `103.48.192.62` | 177 | Hanoi, VN |
-| `43.128.101.247` | 113 | Singapore (Tencent) |
 
-Two sources crossed the port-scan threshold, touching 13 and 10 distinct ports respectively.
+Counting per IP understates the most persistent operator here. `91.92.40.36` (425), `91.92.40.23` (80), and `91.92.40.153` (76) share a `/24` and a provider, totalling 581 attempts. Ranked individually, two of the three look like minor sources; grouped by subnet they are the single most active brute-force origin in the dataset. Subnet and ASN aggregation is the obvious next improvement to the analysis.
+
+Three sources crossed the port-scan threshold, the heaviest touching 71 distinct ports. Two of those three (`146.75.38.49` and `146.75.30.49`) again share upstream address space.
 
 ### Credential patterns
 
-Around 1,780 credential attempts were recorded across the collection window. The distribution is extremely flat: the twenty most common passwords account for roughly 377 of them, meaning about 80% of attempts use passwords tried fewer than a dozen times each. This is dictionary spraying, not repetition of a short list.
+The credential distribution is extremely flat. Direct inspection of the raw logs during an earlier window found roughly 1,780 attempts, of which the twenty most common passwords accounted for about 377, meaning some 80% of attempts used passwords tried fewer than a dozen times each. This is dictionary spraying rather than repetition of a short list.
 
-The most frequent single passwords were `123456` (86), `password` (32), `admin` (23), and `root` (20). Alongside those, a distinct category appears:
+The most frequent pairs are the expected ones: `root/root` (30), `root/123456` (28), `root/admin` (26), `root/qwerty` (19). Alongside those, a distinct category persists:
 
-`ubuntu` (17), `debian` (16), `apache` (15), `mysql` (14), `centos` (14), `www` (13), `linux` (13), `vps` (12), `host` (12)
+`root/debian` (19), `root/ubuntu` (15), `root/linux` (15), `root/mysql` (14), `root/apache` (14), `root/centos` (13), `root/vps` (13), `root/host` (13), `root/www` (13)
 
 These are distribution names, service names, and hosting terms used as passwords. The bots are wagering that the operator reused the OS or a running service as a credential. That is a different heuristic from numeric-string spraying, and it suggests wordlists assembled from observed real-world defaults rather than generic breach dumps.
 
-Note that the report's credential table counts username/password *pairs*, while the figures above count passwords irrespective of username. A password like `123456` appears 86 times but is split across many usernames, so no single pair approaches that count. The two views answer different questions and are not directly comparable.
+Note that the report's credential table counts username/password *pairs*. Counting passwords irrespective of username gives different figures, since a common password is split across many usernames. The two views answer different questions and are not directly comparable.
 
 ### Research scanners in the data
 
@@ -74,6 +84,8 @@ No malware families were matched via Suricata signatures during this period.
 The sensor runs T-Pot's **Mini** flavor, chosen to fit within 4 GB of RAM. Port 22 is served by the generic `honeypots` container rather than Cowrie, which means the sensor records authentication attempts and their outcome but does not emulate a shell session afterward.
 
 Concretely: when a fake login is granted, no post-compromise behaviour is captured. There are no session transcripts and no malware samples, and `cowrie/downloads/` is empty by design rather than by accident. Running the Standard flavor on a larger instance would capture command histories and any payloads pulled down, which is the more valuable half of honeypot data.
+
+Attacker metrics are aggregated per IP address. As the brute-force section shows, this understates operators who distribute across a subnet.
 
 Geolocation and ASN attribution come from a free keyless API and are indicative rather than authoritative. See `docs/METHODOLOGY.md` for caveats on the Suricata signature matching.
 
