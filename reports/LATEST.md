@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-11T11:51:53Z
+# T-Pot Honeypot Report - 2026-10-12T13:55:34Z
 
-Source data: `20261011T114700Z` &nbsp;|&nbsp; Total events analyzed: **440718** &nbsp;|&nbsp; Unique attacker IPs: **6635**
+Source data: `20261012T135043Z` &nbsp;|&nbsp; Total events analyzed: **440087** &nbsp;|&nbsp; Unique attacker IPs: **6693**
 
-Events by source: `honeypots`: 59094, `suricata`: 330861, `p0f`: 50763
+Events by source: `honeypots`: 57061, `suricata`: 331721, `p0f`: 51305
 
-_232354 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_232589 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -12,14 +12,13 @@ _232354 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `196.20.216.206` | 12732 | Mauritius | Port Louis |  |
 | `185.177.72.38` | 2749 | France | Vélizy-Villacoublay | FBW NETWORKS |
 | `106.38.51.68` | 2697 | China | Beijing | Chinanet BJ |
-| `136.66.127.197` | 2643 | United States | The Dalles | Google Cloud (us-west1) |
-| `77.91.71.90` | 1224 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 1416 | Israel | Tel Aviv | NEW |
 | `45.148.10.9` | 1218 | The Netherlands | Amsterdam | Techoff SRV Limited |
 | `77.239.124.36` | 1146 | France | Paris | RocketCloud |
 | `94.237.82.187` | 1058 | Germany | Frankfurt am Main |  |
 | `190.119.63.81` | 1008 | Peru | Lima | America Movil Peru S.A.C |
 | `172.234.207.202` | 760 | United States | Chicago | Akamai Technologies, Inc. |
-| `185.218.86.25` | 741 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
+| `185.218.86.25` | 713 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `79.29.9.2` | 706 | Italy | Rome | NAS DHCP Pool TORINO |
 | `77.239.124.172` | 692 | France | Paris | RocketCloud |
 | `74.207.252.24` | 690 | United States | Fremont | Linode |
@@ -27,56 +26,57 @@ _232354 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
 | `195.177.94.103` | 414 | France | Marseille | Pitline Ltd |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
-| `16.5.0.236` | 356 | Brazil | São Paulo | EMBNEX. LLC |
+| `45.198.224.124` | 344 | Sweden | Stockholm | Vpsvault.host LTD |
+| `16.5.0.236` | 341 | Brazil | São Paulo | EMBNEX. LLC |
 | `160.30.132.209` | 339 | Nepal | Kathmandu | Islington College Pvt. Ltd |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 17359 |
+| United States | 15146 |
 | Mauritius | 12734 |
 | France | 7553 |
-| The Netherlands | 5509 |
-| China | 5184 |
-| Germany | 3374 |
-| United Kingdom | 1757 |
-| Singapore | 1696 |
-| Hong Kong | 1658 |
-| Israel | 1294 |
-| Brazil | 1161 |
+| The Netherlands | 5554 |
+| China | 5187 |
+| Germany | 3372 |
+| United Kingdom | 1767 |
+| Singapore | 1704 |
+| Hong Kong | 1632 |
+| Israel | 1487 |
+| Brazil | 1139 |
+| Belgium | 1053 |
 | Peru | 1011 |
-| Belgium | 941 |
 | Nepal | 923 |
-| Italy | 762 |
-| Canada | 691 |
-| India | 630 |
-| Sweden | 592 |
-| Vietnam | 531 |
-| Japan | 518 |
+| Italy | 765 |
+| Canada | 718 |
+| Sweden | 646 |
+| India | 620 |
+| Vietnam | 538 |
+| Japan | 510 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 33655 |
-| 80 | 21717 |
-| 443 | 15827 |
+| 22 | 33865 |
+| 80 | 20594 |
+| 443 | 14859 |
 | 64295 | 44 |
 | 40692 | 7 |
 | 50296 | 7 |
-| 55930 | 2 |
+| 58618 | 2 |
 | 36366 | 2 |
-| 48552 | 2 |
-| 43584 | 2 |
-| 53388 | 2 |
-| 39950 | 2 |
-| 36356 | 2 |
-| 35072 | 2 |
-| 51106 | 2 |
-| 47114 | 2 |
-| 33382 | 2 |
-| 55072 | 2 |
 | 42246 | 2 |
-| 47052 | 2 |
+| 55930 | 2 |
+| 58752 | 2 |
+| 41028 | 2 |
+| 58084 | 2 |
+| 33634 | 2 |
+| 47132 | 2 |
+| 60332 | 2 |
+| 41128 | 2 |
+| 49914 | 2 |
+| 51106 | 2 |
+| 39950 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -95,22 +95,23 @@ _232354 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `135.148.217.213` | 118 |
 | `91.218.108.6` | 104 |
 | `43.161.249.223` | 100 |
-| `47.251.70.129` | 100 |
-| `166.248.3.175` | 100 |
 | `20.235.157.149` | 100 |
+| `166.248.3.175` | 100 |
+| `47.251.70.129` | 100 |
 | `47.242.67.96` | 95 |
 | `39.106.217.151` | 94 |
 | `115.85.243.22` | 82 |
 | `50.6.227.30` | 80 |
 | `77.239.124.149` | 76 |
 
-**Likely port-scan sources** (>= 5 distinct ports touched): 3
+**Likely port-scan sources** (>= 5 distinct ports touched): 4
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 88 |
-| `140.248.150.49` | 58 |
-| `146.75.30.49` | 31 |
+| `146.75.38.49` | 100 |
+| `140.248.150.49` | 60 |
+| `146.75.30.49` | 36 |
+| `54.224.99.219` | 5 |
 
 ## Malware Families Detected
 _Detected via Suricata alert signature matching - see docs/METHODOLOGY.md for caveats._
@@ -120,32 +121,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 37 |
+| `root` | `123456` | 36 |
 | `root` | `root` | 29 |
 | `root` | `password` | 27 |
 | `root` | `admin` | 22 |
 | `user` | `user` | 18 |
-| `root` | `qwerty` | 15 |
-| `root` | `passwd` | 15 |
 | `root` | `ubuntu` | 15 |
-| `pi` | `raspberry` | 14 |
+| `root` | `passwd` | 15 |
+| `root` | `qwerty` | 15 |
 | `root` | `test` | 14 |
-| `admin` | `admin` | 13 |
-| `admin` | `admin123` | 13 |
-| `root` | `abcd1234` | 13 |
-| `git` | `git` | 13 |
-| `root` | `1` | 13 |
-| `test` | `test123` | 13 |
+| `pi` | `raspberry` | 14 |
+| `root` | `linux` | 13 |
+| `root` | `pass` | 13 |
+| `root` | `guest` | 13 |
 | `root` | `1234567890` | 13 |
 | `deploy` | `deploy` | 13 |
+| `root` | `abcd1234` | 13 |
+| `test` | `test123` | 13 |
+| `admin` | `admin123` | 13 |
 | `ubuntu` | `123456` | 13 |
-| `root` | `guest` | 13 |
+| `admin` | `admin` | 13 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-11 | 646 |
-| 2026-09-12 | 3745 |
+| 2026-09-12 | 912 |
 | 2026-09-13 | 874 |
 | 2026-09-14 | 1824 |
 | 2026-09-15 | 3325 |
@@ -174,7 +174,8 @@ _None detected in this period._
 | 2026-10-08 | 1248 |
 | 2026-10-09 | 4361 |
 | 2026-10-10 | 14015 |
-| 2026-10-11 | 560 |
+| 2026-10-11 | 1189 |
+| 2026-10-12 | 1002 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
