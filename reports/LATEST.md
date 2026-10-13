@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-12T13:55:34Z
+# T-Pot Honeypot Report - 2026-10-13T13:13:40Z
 
-Source data: `20261012T135043Z` &nbsp;|&nbsp; Total events analyzed: **440087** &nbsp;|&nbsp; Unique attacker IPs: **6693**
+Source data: `20261013T130848Z` &nbsp;|&nbsp; Total events analyzed: **453783** &nbsp;|&nbsp; Unique attacker IPs: **6679**
 
-Events by source: `honeypots`: 57061, `suricata`: 331721, `p0f`: 51305
+Events by source: `honeypots`: 58144, `suricata`: 336039, `p0f`: 59600
 
-_232589 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_232430 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -12,71 +12,71 @@ _232589 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `196.20.216.206` | 12732 | Mauritius | Port Louis |  |
 | `185.177.72.38` | 2749 | France | Vélizy-Villacoublay | FBW NETWORKS |
 | `106.38.51.68` | 2697 | China | Beijing | Chinanet BJ |
-| `77.91.71.90` | 1416 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 1564 | Israel | Tel Aviv | NEW |
 | `45.148.10.9` | 1218 | The Netherlands | Amsterdam | Techoff SRV Limited |
 | `77.239.124.36` | 1146 | France | Paris | RocketCloud |
 | `94.237.82.187` | 1058 | Germany | Frankfurt am Main |  |
+| `135.148.217.213` | 1021 | United States | Warrenton | Cyera |
 | `190.119.63.81` | 1008 | Peru | Lima | America Movil Peru S.A.C |
 | `172.234.207.202` | 760 | United States | Chicago | Akamai Technologies, Inc. |
-| `185.218.86.25` | 713 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `79.29.9.2` | 706 | Italy | Rome | NAS DHCP Pool TORINO |
 | `77.239.124.172` | 692 | France | Paris | RocketCloud |
 | `74.207.252.24` | 690 | United States | Fremont | Linode |
+| `185.218.86.25` | 687 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
 | `195.177.94.103` | 414 | France | Marseille | Pitline Ltd |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
-| `45.198.224.124` | 344 | Sweden | Stockholm | Vpsvault.host LTD |
-| `16.5.0.236` | 341 | Brazil | São Paulo | EMBNEX. LLC |
+| `45.198.224.124` | 384 | Sweden | Stockholm | Vpsvault.host LTD |
 | `160.30.132.209` | 339 | Nepal | Kathmandu | Islington College Pvt. Ltd |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 15146 |
+| United States | 15179 |
 | Mauritius | 12734 |
-| France | 7553 |
-| The Netherlands | 5554 |
-| China | 5187 |
-| Germany | 3372 |
-| United Kingdom | 1767 |
-| Singapore | 1704 |
-| Hong Kong | 1632 |
-| Israel | 1487 |
-| Brazil | 1139 |
-| Belgium | 1053 |
+| France | 7409 |
+| The Netherlands | 5498 |
+| China | 4845 |
+| Germany | 3148 |
+| Unknown | 1993 |
+| United Kingdom | 1718 |
+| Singapore | 1657 |
+| Israel | 1645 |
+| Hong Kong | 1641 |
+| Belgium | 1141 |
+| Brazil | 1072 |
 | Peru | 1011 |
 | Nepal | 923 |
-| Italy | 765 |
-| Canada | 718 |
-| Sweden | 646 |
-| India | 620 |
-| Vietnam | 538 |
-| Japan | 510 |
+| Italy | 749 |
+| Canada | 712 |
+| Sweden | 691 |
+| India | 601 |
+| Vietnam | 524 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 33865 |
-| 80 | 20594 |
-| 443 | 14859 |
-| 64295 | 44 |
+| 22 | 34750 |
+| 80 | 20904 |
+| 443 | 14969 |
+| 64295 | 41 |
 | 40692 | 7 |
 | 50296 | 7 |
-| 58618 | 2 |
-| 36366 | 2 |
+| 42258 | 2 |
 | 42246 | 2 |
-| 55930 | 2 |
-| 58752 | 2 |
-| 41028 | 2 |
+| 53388 | 2 |
 | 58084 | 2 |
-| 33634 | 2 |
-| 47132 | 2 |
+| 53300 | 2 |
+| 52796 | 2 |
+| 59544 | 2 |
+| 45508 | 2 |
+| 45052 | 2 |
+| 33382 | 2 |
+| 60842 | 2 |
+| 39950 | 2 |
 | 60332 | 2 |
 | 41128 | 2 |
-| 49914 | 2 |
-| 51106 | 2 |
-| 39950 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -86,18 +86,18 @@ _232589 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `196.20.216.206` | 5778 |
 | `106.38.51.68` | 1286 |
 | `77.239.124.36` | 513 |
+| `135.148.217.213` | 499 |
 | `190.119.63.81` | 496 |
 | `79.29.9.2` | 341 |
 | `77.239.124.172` | 300 |
 | `165.154.137.186` | 185 |
 | `77.239.124.206` | 179 |
 | `160.30.132.209` | 163 |
-| `135.148.217.213` | 118 |
 | `91.218.108.6` | 104 |
-| `43.161.249.223` | 100 |
-| `20.235.157.149` | 100 |
 | `166.248.3.175` | 100 |
+| `43.161.249.223` | 100 |
 | `47.251.70.129` | 100 |
+| `20.235.157.149` | 100 |
 | `47.242.67.96` | 95 |
 | `39.106.217.151` | 94 |
 | `115.85.243.22` | 82 |
@@ -122,31 +122,30 @@ _None detected in this period._
 | Username | Password | Attempts |
 |---|---|---:|
 | `root` | `123456` | 36 |
-| `root` | `root` | 29 |
+| `root` | `root` | 31 |
 | `root` | `password` | 27 |
-| `root` | `admin` | 22 |
-| `user` | `user` | 18 |
-| `root` | `ubuntu` | 15 |
-| `root` | `passwd` | 15 |
+| `root` | `admin` | 23 |
+| `user` | `user` | 20 |
+| `root` | `ubuntu` | 16 |
+| `root` | `passwd` | 16 |
+| `pi` | `raspberry` | 16 |
+| `root` | `1` | 15 |
 | `root` | `qwerty` | 15 |
-| `root` | `test` | 14 |
-| `pi` | `raspberry` | 14 |
-| `root` | `linux` | 13 |
+| `root` | `123` | 14 |
+| `root` | `abcd1234` | 14 |
+| `test` | `test123` | 14 |
+| `ubuntu` | `123456` | 14 |
+| `git` | `git` | 14 |
+| `root` | `1234567890` | 14 |
+| `admin` | `admin123` | 14 |
+| `deploy` | `deploy` | 14 |
+| `admin` | `admin` | 14 |
 | `root` | `pass` | 13 |
-| `root` | `guest` | 13 |
-| `root` | `1234567890` | 13 |
-| `deploy` | `deploy` | 13 |
-| `root` | `abcd1234` | 13 |
-| `test` | `test123` | 13 |
-| `admin` | `admin123` | 13 |
-| `ubuntu` | `123456` | 13 |
-| `admin` | `admin` | 13 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-12 | 912 |
-| 2026-09-13 | 874 |
+| 2026-09-13 | 684 |
 | 2026-09-14 | 1824 |
 | 2026-09-15 | 3325 |
 | 2026-09-16 | 1063 |
@@ -175,7 +174,8 @@ _None detected in this period._
 | 2026-10-09 | 4361 |
 | 2026-10-10 | 14015 |
 | 2026-10-11 | 1189 |
-| 2026-10-12 | 1002 |
+| 2026-10-12 | 2661 |
+| 2026-10-13 | 748 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
