@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-13T13:13:40Z
+# T-Pot Honeypot Report - 2026-10-14T10:54:34Z
 
-Source data: `20261013T130848Z` &nbsp;|&nbsp; Total events analyzed: **453783** &nbsp;|&nbsp; Unique attacker IPs: **6679**
+Source data: `20261014T104943Z` &nbsp;|&nbsp; Total events analyzed: **454982** &nbsp;|&nbsp; Unique attacker IPs: **6667**
 
-Events by source: `honeypots`: 58144, `suricata`: 336039, `p0f`: 59600
+Events by source: `honeypots`: 58660, `suricata`: 336047, `p0f`: 60275
 
-_232430 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_231741 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -12,7 +12,7 @@ _232430 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `196.20.216.206` | 12732 | Mauritius | Port Louis |  |
 | `185.177.72.38` | 2749 | France | Vélizy-Villacoublay | FBW NETWORKS |
 | `106.38.51.68` | 2697 | China | Beijing | Chinanet BJ |
-| `77.91.71.90` | 1564 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 1642 | Israel | Tel Aviv | NEW |
 | `45.148.10.9` | 1218 | The Netherlands | Amsterdam | Techoff SRV Limited |
 | `77.239.124.36` | 1146 | France | Paris | RocketCloud |
 | `94.237.82.187` | 1058 | Germany | Frankfurt am Main |  |
@@ -22,61 +22,61 @@ _232430 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `79.29.9.2` | 706 | Italy | Rome | NAS DHCP Pool TORINO |
 | `77.239.124.172` | 692 | France | Paris | RocketCloud |
 | `74.207.252.24` | 690 | United States | Fremont | Linode |
-| `185.218.86.25` | 687 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
+| `185.218.86.25` | 663 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
+| `45.198.224.124` | 420 | Sweden | Stockholm | Vpsvault.host LTD |
 | `195.177.94.103` | 414 | France | Marseille | Pitline Ltd |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
-| `45.198.224.124` | 384 | Sweden | Stockholm | Vpsvault.host LTD |
 | `160.30.132.209` | 339 | Nepal | Kathmandu | Islington College Pvt. Ltd |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 15179 |
+| United States | 16086 |
 | Mauritius | 12734 |
-| France | 7409 |
-| The Netherlands | 5498 |
-| China | 4845 |
-| Germany | 3148 |
-| Unknown | 1993 |
-| United Kingdom | 1718 |
-| Singapore | 1657 |
-| Israel | 1645 |
-| Hong Kong | 1641 |
-| Belgium | 1141 |
-| Brazil | 1072 |
+| France | 7546 |
+| The Netherlands | 5646 |
+| China | 5113 |
+| Germany | 3440 |
+| United Kingdom | 1823 |
+| Israel | 1721 |
+| Singapore | 1679 |
+| Hong Kong | 1644 |
+| Belgium | 1152 |
+| Brazil | 1082 |
 | Peru | 1011 |
-| Nepal | 923 |
-| Italy | 749 |
-| Canada | 712 |
-| Sweden | 691 |
-| India | 601 |
-| Vietnam | 524 |
+| Nepal | 922 |
+| India | 919 |
+| Canada | 772 |
+| Italy | 755 |
+| Sweden | 740 |
+| Vietnam | 536 |
+| Japan | 487 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 34750 |
-| 80 | 20904 |
-| 443 | 14969 |
+| 22 | 34770 |
+| 80 | 21160 |
+| 443 | 15348 |
 | 64295 | 41 |
 | 40692 | 7 |
 | 50296 | 7 |
-| 42258 | 2 |
-| 42246 | 2 |
+| 37928 | 2 |
 | 53388 | 2 |
-| 58084 | 2 |
-| 53300 | 2 |
+| 33634 | 2 |
+| 47132 | 2 |
 | 52796 | 2 |
 | 59544 | 2 |
-| 45508 | 2 |
-| 45052 | 2 |
-| 33382 | 2 |
-| 60842 | 2 |
-| 39950 | 2 |
+| 36356 | 2 |
+| 43584 | 2 |
+| 48340 | 2 |
+| 60890 | 2 |
+| 47114 | 2 |
 | 60332 | 2 |
 | 41128 | 2 |
+| 33382 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -95,22 +95,23 @@ _232430 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `160.30.132.209` | 163 |
 | `91.218.108.6` | 104 |
 | `166.248.3.175` | 100 |
-| `43.161.249.223` | 100 |
-| `47.251.70.129` | 100 |
 | `20.235.157.149` | 100 |
+| `47.251.70.129` | 100 |
+| `43.161.249.223` | 100 |
 | `47.242.67.96` | 95 |
 | `39.106.217.151` | 94 |
 | `115.85.243.22` | 82 |
 | `50.6.227.30` | 80 |
 | `77.239.124.149` | 76 |
 
-**Likely port-scan sources** (>= 5 distinct ports touched): 4
+**Likely port-scan sources** (>= 5 distinct ports touched): 5
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 100 |
-| `140.248.150.49` | 60 |
-| `146.75.30.49` | 36 |
+| `146.75.38.49` | 92 |
+| `140.248.150.49` | 59 |
+| `146.75.30.49` | 31 |
+| `100.25.103.9` | 5 |
 | `54.224.99.219` | 5 |
 
 ## Malware Families Detected
@@ -130,23 +131,22 @@ _None detected in this period._
 | `root` | `passwd` | 16 |
 | `pi` | `raspberry` | 16 |
 | `root` | `1` | 15 |
+| `root` | `123` | 15 |
 | `root` | `qwerty` | 15 |
-| `root` | `123` | 14 |
 | `root` | `abcd1234` | 14 |
-| `test` | `test123` | 14 |
 | `ubuntu` | `123456` | 14 |
 | `git` | `git` | 14 |
 | `root` | `1234567890` | 14 |
-| `admin` | `admin123` | 14 |
+| `test` | `test123` | 14 |
 | `deploy` | `deploy` | 14 |
 | `admin` | `admin` | 14 |
+| `admin` | `admin123` | 14 |
 | `root` | `pass` | 13 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-13 | 684 |
-| 2026-09-14 | 1824 |
+| 2026-09-14 | 1627 |
 | 2026-09-15 | 3325 |
 | 2026-09-16 | 1063 |
 | 2026-09-17 | 2219 |
@@ -175,7 +175,8 @@ _None detected in this period._
 | 2026-10-10 | 14015 |
 | 2026-10-11 | 1189 |
 | 2026-10-12 | 2661 |
-| 2026-10-13 | 748 |
+| 2026-10-13 | 1690 |
+| 2026-10-14 | 579 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
