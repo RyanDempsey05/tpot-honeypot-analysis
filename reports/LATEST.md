@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-16T10:24:20Z
+# T-Pot Honeypot Report - 2026-10-17T09:57:40Z
 
-Source data: `20261016T101920Z` &nbsp;|&nbsp; Total events analyzed: **451342** &nbsp;|&nbsp; Unique attacker IPs: **6719**
+Source data: `20261017T095243Z` &nbsp;|&nbsp; Total events analyzed: **452977** &nbsp;|&nbsp; Unique attacker IPs: **6745**
 
-Events by source: `honeypots`: 55957, `suricata`: 334830, `p0f`: 60555
+Events by source: `honeypots`: 55970, `suricata`: 335974, `p0f`: 61033
 
-_231094 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_231001 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -20,63 +20,63 @@ _231094 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `172.234.207.202` | 760 | United States | Chicago | Akamai Technologies, Inc. |
 | `77.239.124.172` | 692 | France | Paris | RocketCloud |
 | `74.207.252.24` | 690 | United States | Fremont | Linode |
-| `185.218.86.25` | 634 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
-| `45.198.224.124` | 496 | Sweden | Stockholm | Vpsvault.host LTD |
+| `185.218.86.25` | 608 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
+| `45.198.224.124` | 543 | Sweden | Stockholm | Vpsvault.host LTD |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
 | `160.30.132.209` | 339 | Nepal | Kathmandu | Islington College Pvt. Ltd |
 | `137.23.38.53` | 321 | India | Mumbai | Oracle Cloud Infrastructure (ap-mumbai-1) |
-| `16.5.0.236` | 273 | Brazil | São Paulo | EMBNEX. LLC |
-| `94.154.43.250` | 269 | The Netherlands | Amsterdam | FOP Danik Vyacheslav Evgenievich |
+| `94.154.43.250` | 291 | The Netherlands | Amsterdam | FOP Danik Vyacheslav Evgenievich |
+| `16.5.0.236` | 264 | Brazil | São Paulo | EMBNEX. LLC |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 16094 |
+| United States | 15490 |
 | Mauritius | 12734 |
-| France | 7370 |
-| The Netherlands | 5394 |
-| China | 4854 |
-| Germany | 2657 |
-| United Kingdom | 1830 |
+| France | 7041 |
+| The Netherlands | 5203 |
+| China | 4750 |
+| Germany | 2479 |
+| Unknown | 2291 |
+| United Kingdom | 1809 |
 | Israel | 1722 |
-| Hong Kong | 1609 |
-| Belgium | 1229 |
-| Singapore | 1096 |
-| Brazil | 1029 |
-| Peru | 1011 |
+| Hong Kong | 1339 |
+| Singapore | 1127 |
+| Belgium | 1075 |
+| Brazil | 1015 |
+| Peru | 1009 |
 | Nepal | 922 |
-| India | 915 |
-| Sweden | 832 |
-| Canada | 804 |
-| Thailand | 568 |
-| Vietnam | 534 |
-| Japan | 499 |
+| India | 916 |
+| Sweden | 789 |
+| Canada | 787 |
+| Thailand | 549 |
+| Vietnam | 522 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 33644 |
-| 80 | 20676 |
-| 443 | 14331 |
+| 22 | 33444 |
+| 80 | 20816 |
+| 443 | 14529 |
 | 64295 | 39 |
-| 50296 | 7 |
 | 40692 | 7 |
-| 57058 | 2 |
-| 45508 | 2 |
-| 45052 | 2 |
-| 58752 | 2 |
-| 41028 | 2 |
-| 60842 | 2 |
+| 50296 | 7 |
 | 53300 | 2 |
-| 35072 | 2 |
+| 47114 | 2 |
+| 36356 | 2 |
+| 51106 | 2 |
+| 42258 | 2 |
+| 45052 | 2 |
+| 45064 | 2 |
 | 58618 | 2 |
-| 39190 | 2 |
+| 36366 | 2 |
 | 60890 | 2 |
-| 48340 | 2 |
-| 33382 | 2 |
-| 37928 | 2 |
+| 40688 | 2 |
+| 37174 | 2 |
+| 45508 | 2 |
+| 35072 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -93,23 +93,23 @@ _231094 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `77.239.124.206` | 179 |
 | `160.30.132.209` | 163 |
 | `91.218.108.6` | 104 |
-| `47.251.70.129` | 100 |
-| `43.161.249.223` | 100 |
 | `20.235.157.149` | 100 |
 | `166.248.3.175` | 100 |
+| `47.251.70.129` | 100 |
 | `47.242.67.96` | 95 |
 | `39.106.217.151` | 94 |
 | `50.6.227.30` | 80 |
 | `77.239.124.149` | 76 |
 | `20.74.132.130` | 66 |
 | `77.91.71.90` | 55 |
+| `123.139.242.2` | 47 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 5
 
 | IP | Distinct Ports |
 |---|---:|
 | `146.75.38.49` | 89 |
-| `140.248.150.49` | 59 |
+| `140.248.150.49` | 57 |
 | `146.75.30.49` | 33 |
 | `100.25.103.9` | 5 |
 | `54.224.99.219` | 5 |
@@ -122,32 +122,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 31 |
-| `root` | `root` | 28 |
-| `root` | `password` | 27 |
+| `root` | `123456` | 30 |
+| `root` | `root` | 27 |
+| `root` | `password` | 25 |
 | `root` | `admin` | 21 |
 | `user` | `user` | 17 |
 | `root` | `passwd` | 16 |
-| `pi` | `raspberry` | 16 |
+| `pi` | `raspberry` | 15 |
 | `root` | `ubuntu` | 15 |
 | `root` | `qwerty` | 14 |
-| `root` | `1` | 14 |
-| `git` | `git` | 14 |
-| `root` | `123` | 14 |
+| `git` | `git` | 13 |
+| `root` | `123` | 13 |
+| `root` | `1` | 13 |
 | `root` | `pass` | 13 |
 | `root` | `guest` | 13 |
-| `root` | `test` | 13 |
-| `test` | `test123` | 13 |
-| `ubuntu` | `123456` | 13 |
-| `admin` | `admin123` | 13 |
-| `root` | `1234567890` | 13 |
-| `admin` | `admin` | 13 |
+| `admin` | `admin` | 12 |
+| `root` | `abcd1234` | 12 |
+| `test` | `test123` | 12 |
+| `root` | `123456789` | 12 |
+| `pi` | `pi` | 12 |
+| `root` | `1234` | 12 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-16 | 884 |
-| 2026-09-17 | 2219 |
+| 2026-09-17 | 2003 |
 | 2026-09-18 | 1897 |
 | 2026-09-19 | 1629 |
 | 2026-09-20 | 2554 |
@@ -176,7 +175,8 @@ _None detected in this period._
 | 2026-10-13 | 1690 |
 | 2026-10-14 | 1412 |
 | 2026-10-15 | 1146 |
-| 2026-10-16 | 532 |
+| 2026-10-16 | 1221 |
+| 2026-10-17 | 546 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
