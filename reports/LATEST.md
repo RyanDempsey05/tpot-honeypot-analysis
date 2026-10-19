@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-18T10:09:30Z
+# T-Pot Honeypot Report - 2026-10-19T11:36:20Z
 
-Source data: `20261018T100435Z` &nbsp;|&nbsp; Total events analyzed: **453210** &nbsp;|&nbsp; Unique attacker IPs: **6730**
+Source data: `20261019T113128Z` &nbsp;|&nbsp; Total events analyzed: **452988** &nbsp;|&nbsp; Unique attacker IPs: **6747**
 
-Events by source: `honeypots`: 55433, `suricata`: 336488, `p0f`: 61289
+Events by source: `honeypots`: 54743, `suricata`: 337257, `p0f`: 60988
 
-_230813 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_231227 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -18,65 +18,65 @@ _230813 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `135.148.217.213` | 1021 | United States | Warrenton | Cyera |
 | `190.119.63.81` | 1008 | Peru | Lima | America Movil Peru S.A.C |
 | `172.234.207.202` | 760 | United States | Chicago | Akamai Technologies, Inc. |
-| `77.239.124.172` | 692 | France | Paris | RocketCloud |
 | `74.207.252.24` | 690 | United States | Fremont | Linode |
-| `185.218.86.25` | 589 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
-| `45.198.224.124` | 586 | Sweden | Stockholm | Vpsvault.host LTD |
+| `45.198.224.124` | 627 | Sweden | Stockholm | Vpsvault.host LTD |
+| `185.218.86.25` | 572 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `83.168.110.251` | 522 | Poland | Warsaw | SkyPass Solutions Sp. z.o.o |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
 | `137.23.38.53` | 321 | India | Mumbai | Oracle Cloud Infrastructure (ap-mumbai-1) |
-| `94.154.43.250` | 314 | The Netherlands | Amsterdam | FOP Danik Vyacheslav Evgenievich |
+| `94.154.43.250` | 320 | The Netherlands | Amsterdam | FOP Danik Vyacheslav Evgenievich |
 | `35.230.81.28` | 257 | United States | The Dalles | Google Cloud (us-west1) |
+| `209.15.114.109` | 256 | Thailand | Vadhana | catCloud |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 16229 |
+| United States | 16068 |
 | Mauritius | 12734 |
-| France | 7438 |
-| The Netherlands | 5449 |
-| China | 4938 |
-| Germany | 2706 |
-| United Kingdom | 1861 |
-| Israel | 1720 |
-| Hong Kong | 1336 |
-| Belgium | 1282 |
-| Singapore | 1138 |
+| France | 6760 |
+| The Netherlands | 5445 |
+| China | 4953 |
+| Germany | 2758 |
+| United Kingdom | 1885 |
+| Israel | 1722 |
+| Hong Kong | 1368 |
+| Belgium | 1303 |
+| Singapore | 1135 |
 | Peru | 1009 |
-| Sweden | 940 |
-| Brazil | 913 |
-| India | 909 |
-| Canada | 855 |
+| Sweden | 1001 |
+| India | 908 |
+| Canada | 869 |
+| Brazil | 842 |
 | Poland | 611 |
 | Thailand | 565 |
-| Vietnam | 524 |
-| Japan | 504 |
+| Vietnam | 520 |
+| Japan | 512 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 33056 |
-| 80 | 20940 |
-| 443 | 14259 |
+| 22 | 32243 |
+| 80 | 20976 |
+| 443 | 14373 |
 | 64295 | 39 |
-| 40692 | 7 |
 | 50296 | 7 |
+| 40692 | 7 |
+| 58218 | 2 |
 | 35072 | 2 |
-| 36356 | 2 |
-| 49914 | 2 |
-| 39950 | 2 |
-| 37928 | 2 |
-| 55072 | 2 |
-| 58618 | 2 |
-| 42258 | 2 |
-| 42246 | 2 |
-| 57058 | 2 |
 | 51106 | 2 |
-| 53300 | 2 |
+| 49914 | 2 |
+| 39190 | 2 |
+| 60842 | 2 |
+| 60332 | 2 |
+| 41128 | 2 |
 | 40688 | 2 |
 | 37174 | 2 |
+| 42258 | 2 |
+| 37928 | 2 |
+| 53388 | 2 |
+| 58618 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -88,14 +88,12 @@ _230813 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `77.239.124.36` | 513 |
 | `135.148.217.213` | 499 |
 | `190.119.63.81` | 496 |
-| `77.239.124.172` | 300 |
 | `83.168.110.251` | 253 |
 | `165.154.137.186` | 185 |
 | `77.239.124.206` | 179 |
 | `91.218.108.6` | 104 |
-| `166.248.3.175` | 100 |
-| `47.251.70.129` | 100 |
 | `20.235.157.149` | 100 |
+| `47.251.70.129` | 100 |
 | `47.242.67.96` | 95 |
 | `39.106.217.151` | 94 |
 | `50.6.227.30` | 80 |
@@ -103,16 +101,18 @@ _230813 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `77.91.71.90` | 55 |
 | `123.139.242.2` | 47 |
 | `77.239.124.61` | 46 |
+| `51.75.200.186` | 35 |
+| `154.211.13.102` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 5
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 89 |
-| `140.248.150.49` | 57 |
+| `146.75.38.49` | 107 |
+| `140.248.150.49` | 64 |
 | `146.75.30.49` | 33 |
-| `100.25.103.9` | 5 |
 | `54.224.99.219` | 5 |
+| `100.25.103.9` | 5 |
 
 ## Malware Families Detected
 _Detected via Suricata alert signature matching - see docs/METHODOLOGY.md for caveats._
@@ -122,32 +122,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 29 |
+| `root` | `123456` | 30 |
 | `root` | `root` | 27 |
 | `root` | `password` | 25 |
-| `root` | `admin` | 22 |
-| `root` | `passwd` | 17 |
-| `root` | `pass` | 15 |
-| `root` | `guest` | 15 |
-| `pi` | `raspberry` | 15 |
-| `root` | `ubuntu` | 15 |
-| `user` | `user` | 15 |
+| `root` | `admin` | 24 |
+| `root` | `passwd` | 18 |
+| `root` | `guest` | 17 |
+| `root` | `ubuntu` | 16 |
+| `root` | `pass` | 16 |
+| `root` | `qwerty` | 16 |
+| `root` | `default` | 15 |
+| `root` | `temp` | 15 |
+| `root` | `system` | 15 |
+| `root` | `sys` | 15 |
+| `root` | `sysadmin` | 15 |
+| `root` | `super` | 15 |
 | `root` | `linux` | 14 |
-| `root` | `default` | 14 |
-| `root` | `temp` | 14 |
-| `root` | `system` | 14 |
-| `root` | `qwerty` | 14 |
-| `root` | `vps` | 13 |
-| `root` | `administrator` | 13 |
-| `root` | `sys` | 13 |
-| `root` | `sysadmin` | 13 |
-| `root` | `super` | 13 |
+| `root` | `vps` | 14 |
+| `root` | `administrator` | 14 |
+| `root` | `portfolio` | 14 |
+| `root` | `temponly` | 14 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-18 | 1620 |
-| 2026-09-19 | 1629 |
+| 2026-09-19 | 1282 |
 | 2026-09-20 | 2554 |
 | 2026-09-21 | 1441 |
 | 2026-09-22 | 1172 |
@@ -176,7 +175,8 @@ _None detected in this period._
 | 2026-10-15 | 1146 |
 | 2026-10-16 | 1221 |
 | 2026-10-17 | 1851 |
-| 2026-10-18 | 438 |
+| 2026-10-18 | 1028 |
+| 2026-10-19 | 739 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
