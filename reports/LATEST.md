@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-21T10:53:06Z
+# T-Pot Honeypot Report - 2026-10-22T10:54:11Z
 
-Source data: `20261021T104813Z` &nbsp;|&nbsp; Total events analyzed: **455024** &nbsp;|&nbsp; Unique attacker IPs: **6715**
+Source data: `20261022T104912Z` &nbsp;|&nbsp; Total events analyzed: **454485** &nbsp;|&nbsp; Unique attacker IPs: **6709**
 
-Events by source: `honeypots`: 52722, `suricata`: 339341, `p0f`: 62961
+Events by source: `honeypots`: 52827, `suricata`: 338725, `p0f`: 62933
 
-_231380 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_231324 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -16,11 +16,12 @@ _231380 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `45.148.10.9` | 1218 | The Netherlands | Amsterdam | Techoff SRV Limited |
 | `77.239.124.36` | 1146 | France | Paris | RocketCloud |
 | `135.148.217.213` | 1021 | United States | Warrenton | Cyera |
+| `43.128.101.247` | 769 | Singapore | Singapore | Tencent Cloud Computing |
 | `172.234.207.202` | 760 | United States | Chicago | Akamai Technologies, Inc. |
-| `45.198.224.124` | 645 | Sweden | Stockholm | Vpsvault.host LTD |
+| `45.198.224.124` | 654 | Sweden | Stockholm | Vpsvault.host LTD |
 | `83.168.110.251` | 522 | Poland | Warsaw | SkyPass Solutions Sp. z.o.o |
-| `185.218.86.25` | 520 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `190.119.63.81` | 501 | Peru | Lima | America Movil Peru S.A.C |
+| `185.218.86.25` | 489 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
@@ -28,55 +29,54 @@ _231380 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `94.154.43.250` | 320 | The Netherlands | Amsterdam | FOP Danik Vyacheslav Evgenievich |
 | `109.160.32.123` | 263 | The Netherlands | Amsterdam | GBTCloud |
 | `35.230.81.28` | 257 | United States | The Dalles | Google Cloud (us-west1) |
-| `203.188.11.114` | 256 | Thailand | Khwaeng Thung Song Hong | KSC Commercial Internet Co.Ltd |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
 | United States | 14950 |
 | Mauritius | 12734 |
-| France | 6813 |
-| The Netherlands | 5737 |
-| China | 4891 |
-| Germany | 2785 |
-| United Kingdom | 1895 |
-| Israel | 1713 |
-| Hong Kong | 1329 |
-| Singapore | 1232 |
-| Belgium | 1230 |
-| Sweden | 1026 |
-| Canada | 841 |
-| Brazil | 704 |
-| India | 691 |
-| Poland | 596 |
+| France | 6646 |
+| The Netherlands | 5683 |
+| China | 4677 |
+| Germany | 2807 |
+| Singapore | 2002 |
+| United Kingdom | 1879 |
+| Israel | 1705 |
+| Hong Kong | 1284 |
+| Belgium | 1155 |
+| Sweden | 947 |
+| Canada | 840 |
+| India | 700 |
+| Brazil | 691 |
+| Poland | 592 |
 | Thailand | 554 |
-| Japan | 537 |
-| Vietnam | 529 |
+| Japan | 542 |
+| Vietnam | 533 |
 | Peru | 502 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 31774 |
-| 80 | 20094 |
-| 443 | 13897 |
-| 64295 | 40 |
+| 22 | 32341 |
+| 80 | 19713 |
+| 443 | 13815 |
+| 64295 | 39 |
 | 40692 | 7 |
 | 50296 | 7 |
-| 39950 | 2 |
-| 60332 | 2 |
-| 41128 | 2 |
-| 47114 | 2 |
-| 55072 | 2 |
-| 60890 | 2 |
-| 55764 | 2 |
-| 42246 | 2 |
 | 40688 | 2 |
 | 37174 | 2 |
-| 57058 | 2 |
 | 45508 | 2 |
 | 45052 | 2 |
-| 37928 | 2 |
+| 42246 | 2 |
+| 60890 | 2 |
+| 58218 | 2 |
+| 56322 | 2 |
+| 45064 | 2 |
+| 58618 | 2 |
+| 33382 | 2 |
+| 39950 | 2 |
+| 42258 | 2 |
+| 57058 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -87,6 +87,7 @@ _231380 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `106.38.51.68` | 1286 |
 | `77.239.124.36` | 513 |
 | `135.148.217.213` | 499 |
+| `43.128.101.247` | 381 |
 | `83.168.110.251` | 253 |
 | `190.119.63.81` | 248 |
 | `165.154.137.186` | 185 |
@@ -94,7 +95,6 @@ _231380 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `91.218.108.6` | 104 |
 | `47.251.70.129` | 100 |
 | `47.242.67.96` | 95 |
-| `39.106.217.151` | 94 |
 | `50.6.227.30` | 80 |
 | `77.239.124.149` | 76 |
 | `109.160.32.123` | 64 |
@@ -102,17 +102,17 @@ _231380 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `123.139.242.2` | 47 |
 | `77.239.124.61` | 46 |
 | `51.75.200.186` | 35 |
-| `180.76.147.239` | 31 |
+| `154.211.13.102` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 5
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 100 |
-| `140.248.150.49` | 56 |
+| `146.75.38.49` | 106 |
+| `140.248.150.49` | 58 |
 | `146.75.30.49` | 28 |
-| `54.224.99.219` | 5 |
 | `100.25.103.9` | 5 |
+| `54.224.99.219` | 5 |
 
 ## Malware Families Detected
 _Detected via Suricata alert signature matching - see docs/METHODOLOGY.md for caveats._
@@ -123,31 +123,30 @@ _None detected in this period._
 | Username | Password | Attempts |
 |---|---|---:|
 | `root` | `123456` | 29 |
-| `root` | `password` | 24 |
+| `root` | `password` | 25 |
 | `root` | `root` | 24 |
-| `root` | `admin` | 22 |
-| `root` | `passwd` | 17 |
+| `root` | `admin` | 23 |
+| `root` | `passwd` | 18 |
 | `root` | `ubuntu` | 16 |
 | `root` | `pass` | 16 |
 | `root` | `guest` | 16 |
+| `root` | `qwerty` | 16 |
 | `root` | `default` | 15 |
 | `root` | `temp` | 15 |
 | `root` | `system` | 15 |
 | `root` | `sys` | 15 |
 | `root` | `sysadmin` | 15 |
 | `root` | `super` | 15 |
-| `root` | `qwerty` | 15 |
 | `root` | `linux` | 14 |
-| `root` | `vps` | 14 |
 | `root` | `administrator` | 14 |
 | `root` | `portfolio` | 14 |
 | `root` | `temponly` | 14 |
+| `root` | `test` | 14 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-21 | 1211 |
-| 2026-09-22 | 1172 |
+| 2026-09-22 | 812 |
 | 2026-09-23 | 2039 |
 | 2026-09-24 | 1080 |
 | 2026-09-25 | 1743 |
@@ -176,7 +175,8 @@ _None detected in this period._
 | 2026-10-18 | 1028 |
 | 2026-10-19 | 1172 |
 | 2026-10-20 | 1022 |
-| 2026-10-21 | 763 |
+| 2026-10-21 | 1233 |
+| 2026-10-22 | 1216 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
