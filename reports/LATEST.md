@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-24T10:03:00Z
+# T-Pot Honeypot Report - 2026-10-25T10:26:41Z
 
-Source data: `20261024T095812Z` &nbsp;|&nbsp; Total events analyzed: **460139** &nbsp;|&nbsp; Unique attacker IPs: **6677**
+Source data: `20261025T102154Z` &nbsp;|&nbsp; Total events analyzed: **461440** &nbsp;|&nbsp; Unique attacker IPs: **6657**
 
-Events by source: `honeypots`: 52348, `suricata`: 343270, `p0f`: 64521
+Events by source: `honeypots`: 52559, `suricata`: 343573, `p0f`: 65308
 
-_231428 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_231840 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -12,7 +12,7 @@ _231428 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `196.20.216.206` | 12732 | Mauritius | Port Louis |  |
 | `185.177.72.38` | 2749 | France | Vélizy-Villacoublay | FBW NETWORKS |
 | `106.38.51.68` | 2697 | China | Beijing | Chinanet BJ |
-| `77.91.71.90` | 1719 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 1767 | Israel | Tel Aviv | NEW |
 | `45.148.10.9` | 1218 | The Netherlands | Amsterdam | Techoff SRV Limited |
 | `77.239.124.36` | 1146 | France | Paris | RocketCloud |
 | `135.148.217.213` | 1021 | United States | Warrenton | Cyera |
@@ -23,7 +23,7 @@ _231428 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `190.119.63.81` | 501 | Peru | Lima | America Movil Peru S.A.C |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
-| `185.218.86.25` | 419 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
+| `185.218.86.25` | 405 | Hong Kong | Sheung Wan | TC DATACENTER LIMITED |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
 | `137.23.38.53` | 321 | India | Mumbai | Oracle Cloud Infrastructure (ap-mumbai-1) |
 | `94.154.43.250` | 320 | The Netherlands | Amsterdam | FOP Danik Vyacheslav Evgenievich |
@@ -33,50 +33,50 @@ _231428 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 15224 |
+| United States | 15273 |
 | Mauritius | 12734 |
-| France | 6764 |
-| The Netherlands | 6142 |
-| China | 4742 |
-| Germany | 2607 |
-| Israel | 2069 |
-| Singapore | 2047 |
-| United Kingdom | 1166 |
-| Belgium | 1164 |
-| Hong Kong | 1114 |
-| India | 950 |
-| Sweden | 912 |
-| Canada | 821 |
-| Brazil | 646 |
-| Poland | 591 |
-| Thailand | 548 |
-| Japan | 543 |
-| Vietnam | 533 |
-| Peru | 502 |
+| France | 6660 |
+| The Netherlands | 6322 |
+| China | 4749 |
+| Germany | 2603 |
+| Israel | 2351 |
+| Singapore | 2054 |
+| United Kingdom | 1136 |
+| Hong Kong | 1110 |
+| Belgium | 1094 |
+| India | 947 |
+| Sweden | 920 |
+| Canada | 782 |
+| Brazil | 631 |
+| Poland | 596 |
+| Kazakhstan | 563 |
+| Thailand | 555 |
+| Japan | 541 |
+| Vietnam | 531 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 33354 |
-| 80 | 19927 |
-| 443 | 13342 |
-| 64295 | 39 |
+| 22 | 34056 |
+| 80 | 20072 |
+| 443 | 13278 |
+| 64295 | 43 |
 | 40692 | 7 |
-| 50296 | 7 |
-| 55764 | 2 |
-| 33634 | 2 |
-| 47132 | 2 |
-| 58618 | 2 |
-| 43596 | 2 |
-| 51106 | 2 |
-| 51254 | 2 |
-| 37928 | 2 |
-| 33382 | 2 |
 | 35072 | 2 |
+| 45508 | 2 |
+| 45052 | 2 |
+| 42258 | 2 |
+| 51254 | 2 |
+| 39950 | 2 |
+| 36366 | 2 |
 | 40688 | 2 |
 | 37174 | 2 |
-| 42258 | 2 |
-| 39950 | 2 |
+| 58618 | 2 |
+| 60890 | 2 |
+| 51106 | 2 |
+| 57058 | 2 |
+| 58218 | 2 |
+| 37928 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -97,21 +97,21 @@ _231428 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `47.242.67.96` | 95 |
 | `77.239.124.149` | 76 |
 | `109.160.32.123` | 64 |
-| `77.91.71.90` | 57 |
+| `77.91.71.90` | 58 |
 | `123.139.242.2` | 47 |
 | `77.239.124.61` | 46 |
 | `51.75.200.186` | 35 |
 | `180.76.147.239` | 31 |
-| `113.98.254.50` | 31 |
+| `154.211.13.102` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 4
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 115 |
-| `140.248.150.49` | 61 |
-| `146.75.30.49` | 29 |
-| `54.224.99.219` | 5 |
+| `146.75.38.49` | 123 |
+| `140.248.150.49` | 72 |
+| `146.75.30.49` | 32 |
+| `54.173.240.110` | 5 |
 
 ## Malware Families Detected
 _Detected via Suricata alert signature matching - see docs/METHODOLOGY.md for caveats._
@@ -145,8 +145,7 @@ _None detected in this period._
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-24 | 892 |
-| 2026-09-25 | 1743 |
+| 2026-09-25 | 1438 |
 | 2026-09-26 | 2297 |
 | 2026-09-27 | 1152 |
 | 2026-09-28 | 1385 |
@@ -175,7 +174,8 @@ _None detected in this period._
 | 2026-10-21 | 1233 |
 | 2026-10-22 | 1869 |
 | 2026-10-23 | 2357 |
-| 2026-10-24 | 790 |
+| 2026-10-24 | 1794 |
+| 2026-10-25 | 997 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
