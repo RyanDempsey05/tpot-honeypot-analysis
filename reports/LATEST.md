@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-10-30T11:55:22Z
+# T-Pot Honeypot Report - 2026-10-31T11:28:45Z
 
-Source data: `20261030T115035Z` &nbsp;|&nbsp; Total events analyzed: **501025** &nbsp;|&nbsp; Unique attacker IPs: **6578**
+Source data: `20261031T112359Z` &nbsp;|&nbsp; Total events analyzed: **498519** &nbsp;|&nbsp; Unique attacker IPs: **6543**
 
-Events by source: `honeypots`: 55290, `suricata`: 368197, `p0f`: 77538
+Events by source: `honeypots`: 51428, `suricata`: 369148, `p0f`: 77943
 
-_235840 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_233341 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -13,9 +13,8 @@ _235840 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `45.141.202.113` | 4326 | The Netherlands | Zoetermeer | RoyaleHosting BV |
 | `185.177.72.38` | 2749 | France | Vélizy-Villacoublay | FBW NETWORKS |
 | `106.38.51.68` | 2697 | China | Beijing | Chinanet BJ |
-| `77.91.71.90` | 2005 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 2047 | Israel | Tel Aviv | NEW |
 | `77.237.239.31` | 1375 | France | Lauterbourg | Contabo GmbH |
-| `45.148.10.9` | 1218 | The Netherlands | Amsterdam | Techoff SRV Limited |
 | `77.239.124.36` | 1146 | France | Paris | RocketCloud |
 | `135.148.217.213` | 1021 | United States | Warrenton | Cyera |
 | `43.128.101.247` | 769 | Singapore | Singapore | Tencent Cloud Computing |
@@ -24,59 +23,60 @@ _235840 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `83.168.110.251` | 522 | Poland | Warsaw | SkyPass Solutions Sp. z.o.o |
 | `77.239.124.206` | 476 | France | Paris | RocketCloud |
 | `91.92.47.87` | 443 | The Netherlands | Amsterdam | TechTies Inc |
-| `138.226.239.90` | 389 | The Netherlands | Amsterdam | Vlad Cojuhari |
+| `138.226.239.90` | 433 | The Netherlands | Amsterdam | Vlad Cojuhari |
+| `138.226.239.91` | 433 | The Netherlands | Amsterdam | Vlad Cojuhari |
+| `77.91.71.92` | 405 | Israel | Tel Aviv | NEW |
+| `77.91.71.91` | 405 | Israel | Tel Aviv | NEW |
 | `165.154.137.186` | 389 | Vietnam | Ho Chi Minh City | Ucloud Information Technology (hk) Limited |
-| `138.226.239.91` | 389 | The Netherlands | Amsterdam | Vlad Cojuhari |
-| `77.91.71.91` | 361 | Israel | Tel Aviv | NEW |
-| `77.91.71.92` | 359 | Israel | Tel Aviv | NEW |
+| `185.136.15.82` | 370 | Kazakhstan | Almaty | Vlad Cojuhari |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| United States | 15406 |
+| United States | 15366 |
 | Mauritius | 12734 |
-| The Netherlands | 11075 |
-| France | 7799 |
-| China | 5438 |
-| Israel | 3729 |
-| Germany | 2727 |
-| Kazakhstan | 1705 |
-| Singapore | 1694 |
-| Belgium | 1009 |
-| United Kingdom | 1009 |
-| Sweden | 953 |
-| India | 913 |
-| Hong Kong | 763 |
+| The Netherlands | 9921 |
+| France | 7790 |
+| China | 5349 |
+| Israel | 4005 |
+| Germany | 2719 |
+| Kazakhstan | 1923 |
+| Singapore | 1584 |
+| United Kingdom | 999 |
+| Sweden | 950 |
+| India | 888 |
+| Belgium | 884 |
+| Hong Kong | 755 |
+| Japan | 702 |
 | Poland | 628 |
 | Vietnam | 592 |
-| Thailand | 552 |
-| Canada | 547 |
-| Bulgaria | 534 |
-| Brazil | 509 |
+| Thailand | 557 |
+| Bulgaria | 530 |
+| Canada | 529 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 36191 |
-| 80 | 26330 |
-| 443 | 12442 |
-| 64295 | 45 |
+| 22 | 36603 |
+| 80 | 26429 |
+| 443 | 11075 |
+| 64295 | 46 |
 | 40692 | 7 |
-| 34048 | 2 |
-| 37928 | 2 |
-| 51254 | 2 |
-| 60332 | 2 |
-| 41128 | 2 |
-| 57058 | 2 |
-| 56322 | 2 |
-| 58618 | 2 |
-| 33634 | 2 |
-| 47132 | 2 |
-| 36980 | 2 |
-| 43596 | 2 |
+| 36572 | 2 |
+| 40688 | 2 |
+| 37174 | 2 |
+| 38630 | 2 |
 | 33382 | 2 |
-| 51106 | 2 |
-| 53388 | 2 |
+| 55764 | 2 |
+| 43596 | 2 |
+| 42258 | 2 |
+| 45508 | 2 |
+| 36366 | 2 |
+| 51254 | 2 |
+| 60890 | 2 |
+| 39950 | 2 |
+| 58218 | 2 |
+| 35072 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -92,28 +92,28 @@ _235840 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `165.154.137.186` | 185 |
 | `77.239.124.206` | 179 |
 | `91.218.108.6` | 104 |
-| `77.91.71.90` | 67 |
+| `77.91.71.90` | 68 |
 | `109.160.32.123` | 64 |
 | `123.139.242.2` | 47 |
 | `77.239.124.61` | 46 |
 | `103.72.57.129` | 45 |
 | `51.75.200.186` | 35 |
-| `60.165.119.59` | 31 |
-| `103.243.25.44` | 31 |
-| `49.12.249.111` | 31 |
-| `213.215.209.101` | 31 |
 | `154.211.13.102` | 31 |
+| `42.101.60.58` | 31 |
+| `223.243.179.70` | 31 |
+| `60.165.119.59` | 31 |
+| `113.98.254.50` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 6
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 97 |
+| `146.75.38.49` | 95 |
 | `140.248.150.49` | 70 |
-| `146.75.30.49` | 30 |
-| `54.173.240.110` | 6 |
+| `146.75.30.49` | 32 |
+| `67.202.15.124` | 6 |
 | `54.224.99.219` | 5 |
-| `67.202.15.124` | 5 |
+| `54.173.240.110` | 5 |
 
 ## Malware Families Detected
 _Detected via Suricata alert signature matching - see docs/METHODOLOGY.md for caveats._
@@ -123,32 +123,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 30 |
-| `root` | `password` | 26 |
-| `root` | `root` | 25 |
-| `root` | `admin` | 24 |
-| `root` | `passwd` | 22 |
-| `root` | `ubuntu` | 21 |
-| `root` | `guest` | 21 |
-| `root` | `linux` | 20 |
-| `root` | `vps` | 20 |
-| `root` | `default` | 20 |
-| `root` | `pass` | 20 |
-| `root` | `temp` | 20 |
-| `root` | `system` | 20 |
-| `root` | `sys` | 20 |
-| `root` | `sysadmin` | 20 |
-| `root` | `super` | 20 |
-| `root` | `qwerty` | 20 |
+| `root` | `123456` | 27 |
+| `root` | `password` | 23 |
+| `root` | `root` | 23 |
+| `root` | `admin` | 22 |
+| `root` | `ubuntu` | 20 |
+| `root` | `passwd` | 20 |
 | `root` | `apache` | 19 |
-| `root` | `host` | 19 |
-| `root` | `administrator` | 19 |
+| `root` | `linux` | 19 |
+| `root` | `guest` | 19 |
+| `root` | `vps` | 18 |
+| `root` | `default` | 18 |
+| `root` | `pass` | 18 |
+| `root` | `temp` | 18 |
+| `root` | `system` | 18 |
+| `root` | `sys` | 18 |
+| `root` | `sysadmin` | 18 |
+| `root` | `super` | 18 |
+| `root` | `qwerty` | 18 |
+| `root` | `web` | 17 |
+| `root` | `centos` | 17 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-09-30 | 2306 |
-| 2026-10-01 | 1943 |
+| 2026-10-01 | 1666 |
 | 2026-10-02 | 2227 |
 | 2026-10-03 | 1388 |
 | 2026-10-04 | 1132 |
@@ -177,7 +176,8 @@ _None detected in this period._
 | 2026-10-27 | 1735 |
 | 2026-10-28 | 6846 |
 | 2026-10-29 | 1567 |
-| 2026-10-30 | 979 |
+| 2026-10-30 | 1709 |
+| 2026-10-31 | 996 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
