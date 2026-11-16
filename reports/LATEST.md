@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-11-15T13:12:23Z
+# T-Pot Honeypot Report - 2026-11-16T14:19:49Z
 
-Source data: `20261115T130755Z` &nbsp;|&nbsp; Total events analyzed: **688528** &nbsp;|&nbsp; Unique attacker IPs: **5948**
+Source data: `20261116T141522Z` &nbsp;|&nbsp; Total events analyzed: **685861** &nbsp;|&nbsp; Unique attacker IPs: **5933**
 
-Events by source: `honeypots`: 69513, `suricata`: 527115, `p0f`: 91900
+Events by source: `honeypots`: 69225, `suricata`: 525532, `p0f`: 91104
 
-_226565 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_227221 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -33,50 +33,50 @@ _226565 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 ## Top Countries
 | Country | Events |
 |---|---:|
-| Russia | 41025 |
-| The Netherlands | 23956 |
-| United States | 14254 |
-| China | 3843 |
+| Russia | 41031 |
+| The Netherlands | 23913 |
+| United States | 15192 |
+| China | 3789 |
 | Israel | 3581 |
 | Kazakhstan | 2944 |
-| France | 2856 |
+| France | 2910 |
+| Germany | 2464 |
 | Türkiye | 2359 |
-| Germany | 2319 |
-| Poland | 1520 |
-| Unknown | 1474 |
-| Singapore | 1407 |
-| Hong Kong | 1079 |
-| United Kingdom | 840 |
-| Japan | 507 |
-| Brazil | 471 |
-| Belgium | 453 |
-| Indonesia | 449 |
-| India | 406 |
-| Vietnam | 397 |
+| Singapore | 1408 |
+| Hong Kong | 1103 |
+| Poland | 1001 |
+| United Kingdom | 829 |
+| Japan | 530 |
+| Hungary | 506 |
+| Brazil | 494 |
+| Belgium | 461 |
+| Indonesia | 443 |
+| India | 418 |
+| Vietnam | 412 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 63411 |
-| 443 | 23584 |
-| 80 | 22894 |
+| 22 | 62785 |
+| 443 | 23844 |
+| 80 | 22882 |
 | 64295 | 50 |
 | 60196 | 7 |
 | 37208 | 7 |
-| 43412 | 3 |
 | 50136 | 3 |
-| 35342 | 2 |
-| 58978 | 2 |
+| 43412 | 3 |
 | 55136 | 2 |
-| 48486 | 2 |
-| 36572 | 2 |
-| 58218 | 2 |
-| 33868 | 2 |
-| 47956 | 2 |
-| 42548 | 2 |
-| 56322 | 2 |
-| 39992 | 2 |
-| 38630 | 2 |
+| 33672 | 2 |
+| 56522 | 2 |
+| 53062 | 2 |
+| 53492 | 2 |
+| 46624 | 2 |
+| 39462 | 2 |
+| 45524 | 2 |
+| 56556 | 2 |
+| 35438 | 2 |
+| 46608 | 2 |
+| 59114 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -88,7 +88,6 @@ _226565 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `43.128.101.247` | 381 |
 | `83.168.110.67` | 301 |
 | `47.113.193.48` | 266 |
-| `83.168.110.251` | 253 |
 | `125.39.11.27` | 159 |
 | `47.251.165.65` | 151 |
 | `180.76.228.8` | 134 |
@@ -97,29 +96,30 @@ _226565 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `118.70.239.231` | 62 |
 | `103.72.57.129` | 45 |
 | `8.217.68.84` | 32 |
-| `223.243.179.70` | 31 |
 | `138.122.140.200` | 31 |
-| `49.12.249.111` | 31 |
-| `213.215.209.101` | 31 |
-| `120.71.148.144` | 31 |
+| `113.98.254.50` | 31 |
+| `50.114.172.201` | 31 |
+| `94.204.5.49` | 31 |
 | `101.47.28.226` | 31 |
+| `121.227.31.82` | 31 |
+| `120.71.148.144` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 13
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 75 |
-| `140.248.150.49` | 58 |
-| `146.75.30.49` | 25 |
-| `185.125.188.54` | 9 |
+| `146.75.38.49` | 79 |
+| `140.248.150.49` | 64 |
+| `146.75.30.49` | 27 |
+| `67.202.15.124` | 9 |
 | `185.125.188.59` | 9 |
-| `185.125.188.57` | 9 |
 | `185.125.188.55` | 9 |
-| `67.202.15.124` | 8 |
-| `185.125.188.60` | 8 |
+| `185.125.188.57` | 9 |
+| `185.125.188.54` | 9 |
 | `185.125.188.58` | 8 |
-| `54.234.187.186` | 6 |
+| `185.125.188.60` | 8 |
 | `44.200.226.78` | 5 |
+| `54.234.187.186` | 5 |
 | `54.224.99.219` | 5 |
 
 ## Malware Families Detected
@@ -130,32 +130,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 27 |
+| `root` | `123456` | 29 |
 | `root` | `admin` | 21 |
+| `root` | `qwerty` | 20 |
+| `root` | `root` | 19 |
 | `root` | `ubuntu` | 19 |
 | `root` | `passwd` | 19 |
-| `root` | `qwerty` | 19 |
-| `root` | `password` | 18 |
-| `root` | `root` | 18 |
-| `root` | `linux` | 17 |
-| `root` | `apache` | 17 |
+| `root` | `password` | 17 |
 | `root` | `guest` | 17 |
-| `root` | `nginx` | 16 |
-| `root` | `mysql` | 16 |
-| `root` | `docker` | 16 |
-| `root` | `vps` | 16 |
-| `root` | `host` | 16 |
+| `root` | `apache` | 16 |
 | `root` | `web` | 16 |
-| `root` | `default` | 16 |
+| `root` | `linux` | 16 |
 | `root` | `pass` | 16 |
 | `root` | `temp` | 16 |
+| `root` | `test` | 16 |
 | `root` | `debian` | 15 |
+| `root` | `centos` | 15 |
+| `root` | `nginx` | 15 |
+| `root` | `mysql` | 15 |
+| `root` | `docker` | 15 |
+| `root` | `vps` | 15 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-10-17 | 1656 |
-| 2026-10-18 | 1028 |
+| 2026-10-18 | 838 |
 | 2026-10-19 | 1172 |
 | 2026-10-20 | 1022 |
 | 2026-10-21 | 1233 |
@@ -183,7 +182,8 @@ _None detected in this period._
 | 2026-11-12 | 12077 |
 | 2026-11-13 | 1521 |
 | 2026-11-14 | 1481 |
-| 2026-11-15 | 523 |
+| 2026-11-15 | 1376 |
+| 2026-11-16 | 627 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
