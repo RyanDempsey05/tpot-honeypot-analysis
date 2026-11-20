@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-11-19T14:57:37Z
+# T-Pot Honeypot Report - 2026-11-20T14:38:48Z
 
-Source data: `20261119T145313Z` &nbsp;|&nbsp; Total events analyzed: **677861** &nbsp;|&nbsp; Unique attacker IPs: **5863**
+Source data: `20261120T143430Z` &nbsp;|&nbsp; Total events analyzed: **674773** &nbsp;|&nbsp; Unique attacker IPs: **5854**
 
-Events by source: `honeypots`: 69056, `suricata`: 520174, `p0f`: 88631
+Events by source: `honeypots`: 68197, `suricata`: 518525, `p0f`: 88051
 
-_226801 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_226367 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -14,7 +14,6 @@ _226801 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `80.91.71.147` | 2282 | Türkiye | Istanbul | Hostlayici Internet ve Bilisim Hizmetleri |
 | `109.160.32.171` | 1474 | The Netherlands | Amsterdam | GBTCloud |
 | `77.237.239.31` | 1375 | France | Lauterbourg | Contabo GmbH |
-| `43.128.101.247` | 769 | Singapore | Singapore | Tencent Cloud Computing |
 | `83.168.110.67` | 616 | Poland | Warsaw | SkillHost |
 | `77.91.71.90` | 613 | Israel | Tel Aviv | NEW |
 | `77.91.71.91` | 609 | Israel | Tel Aviv | NEW |
@@ -29,53 +28,54 @@ _226801 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `138.226.239.90` | 569 | The Netherlands | Amsterdam | Vlad Cojuhari |
 | `185.136.15.110` | 567 | Kazakhstan | Almaty | Vlad Cojuhari |
 | `185.136.15.81` | 566 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `185.136.15.80` | 563 | Kazakhstan | Almaty | Vlad Cojuhari |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| Russia | 41018 |
-| The Netherlands | 23740 |
-| United States | 15184 |
-| China | 3763 |
-| Israel | 3581 |
-| Kazakhstan | 2947 |
-| France | 2935 |
-| Germany | 2500 |
-| Türkiye | 2359 |
-| Singapore | 1315 |
-| Hong Kong | 1192 |
-| Poland | 1007 |
-| United Kingdom | 778 |
-| Hungary | 565 |
-| Belgium | 499 |
+| Russia | 41000 |
+| The Netherlands | 23815 |
+| United States | 15150 |
+| China | 3687 |
+| Israel | 3574 |
+| Kazakhstan | 2942 |
+| France | 2905 |
+| Germany | 2509 |
+| Türkiye | 2357 |
+| Hong Kong | 1208 |
+| Poland | 1002 |
+| United Kingdom | 752 |
+| Hungary | 635 |
+| Singapore | 550 |
+| Belgium | 508 |
+| Japan | 473 |
 | Indonesia | 472 |
-| Japan | 471 |
-| Brazil | 455 |
-| India | 421 |
-| Vietnam | 413 |
+| Brazil | 452 |
+| India | 428 |
+| Vietnam | 399 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 62613 |
-| 443 | 23698 |
-| 80 | 22846 |
+| 22 | 61935 |
+| 443 | 23671 |
+| 80 | 22771 |
 | 64295 | 51 |
 | 37208 | 7 |
 | 60196 | 7 |
 | 43412 | 3 |
-| 50136 | 3 |
-| 57642 | 2 |
-| 58424 | 2 |
-| 36366 | 2 |
-| 38630 | 2 |
-| 33868 | 2 |
-| 47956 | 2 |
-| 42548 | 2 |
+| 56830 | 2 |
+| 34048 | 2 |
+| 39992 | 2 |
+| 42024 | 2 |
+| 54810 | 2 |
 | 39950 | 2 |
 | 45554 | 2 |
-| 38474 | 2 |
+| 58978 | 2 |
 | 48486 | 2 |
+| 39100 | 2 |
+| 36366 | 2 |
+| 48596 | 2 |
 | 36572 | 2 |
 
 ## Attack Patterns
@@ -85,7 +85,6 @@ _226801 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 |---|---:|
 | `78.107.31.154` | 20093 |
 | `109.160.32.171` | 679 |
-| `43.128.101.247` | 381 |
 | `83.168.110.67` | 301 |
 | `47.113.193.48` | 266 |
 | `125.39.11.27` | 159 |
@@ -95,27 +94,28 @@ _226801 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `118.70.239.231` | 62 |
 | `103.72.57.129` | 45 |
 | `8.217.68.84` | 32 |
+| `121.227.31.82` | 31 |
+| `4.4.66.84` | 31 |
+| `94.204.5.49` | 31 |
+| `120.71.148.144` | 31 |
+| `50.114.172.201` | 31 |
+| `223.243.179.70` | 31 |
 | `42.236.73.142` | 31 |
 | `60.165.119.59` | 31 |
-| `120.71.148.144` | 31 |
-| `94.204.5.49` | 31 |
-| `4.4.66.84` | 31 |
 | `101.47.28.226` | 31 |
-| `223.243.179.70` | 31 |
-| `49.12.249.111` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 12
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 61 |
-| `140.248.150.49` | 59 |
-| `146.75.30.49` | 27 |
-| `67.202.15.124` | 9 |
+| `146.75.38.49` | 55 |
+| `140.248.150.49` | 55 |
+| `146.75.30.49` | 29 |
 | `185.125.188.59` | 9 |
 | `185.125.188.54` | 9 |
 | `185.125.188.57` | 9 |
 | `185.125.188.55` | 9 |
+| `67.202.15.124` | 8 |
 | `185.125.188.60` | 8 |
 | `185.125.188.58` | 8 |
 | `54.234.187.186` | 6 |
@@ -129,32 +129,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 28 |
-| `root` | `admin` | 21 |
-| `root` | `root` | 19 |
-| `root` | `qwerty` | 19 |
-| `root` | `passwd` | 18 |
-| `root` | `ubuntu` | 17 |
-| `root` | `password` | 16 |
-| `root` | `guest` | 16 |
-| `root` | `linux` | 15 |
-| `root` | `apache` | 15 |
-| `root` | `web` | 15 |
-| `root` | `pass` | 15 |
-| `root` | `temp` | 15 |
-| `root` | `test` | 15 |
-| `root` | `debian` | 14 |
-| `root` | `centos` | 14 |
-| `root` | `nginx` | 14 |
-| `root` | `mysql` | 14 |
-| `root` | `docker` | 14 |
-| `root` | `vps` | 14 |
+| `root` | `123456` | 26 |
+| `root` | `admin` | 19 |
+| `root` | `root` | 17 |
+| `root` | `qwerty` | 17 |
+| `root` | `ubuntu` | 16 |
+| `root` | `passwd` | 16 |
+| `root` | `guest` | 15 |
+| `root` | `linux` | 14 |
+| `root` | `apache` | 14 |
+| `root` | `web` | 14 |
+| `root` | `password` | 14 |
+| `root` | `pass` | 14 |
+| `root` | `temp` | 14 |
+| `root` | `test` | 14 |
+| `root` | `debian` | 13 |
+| `root` | `centos` | 13 |
+| `root` | `nginx` | 13 |
+| `root` | `mysql` | 13 |
+| `root` | `docker` | 13 |
+| `root` | `vps` | 13 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-10-21 | 785 |
-| 2026-10-22 | 1869 |
+| 2026-10-22 | 830 |
 | 2026-10-23 | 2357 |
 | 2026-10-24 | 1794 |
 | 2026-10-25 | 2210 |
@@ -182,7 +181,8 @@ _None detected in this period._
 | 2026-11-16 | 991 |
 | 2026-11-17 | 1061 |
 | 2026-11-18 | 884 |
-| 2026-11-19 | 807 |
+| 2026-11-19 | 1166 |
+| 2026-11-20 | 678 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
