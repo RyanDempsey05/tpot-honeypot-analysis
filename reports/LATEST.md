@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-11-21T13:57:02Z
+# T-Pot Honeypot Report - 2026-11-22T13:49:59Z
 
-Source data: `20261121T135240Z` &nbsp;|&nbsp; Total events analyzed: **673849** &nbsp;|&nbsp; Unique attacker IPs: **5829**
+Source data: `20261122T134540Z` &nbsp;|&nbsp; Total events analyzed: **669025** &nbsp;|&nbsp; Unique attacker IPs: **5823**
 
-Events by source: `honeypots`: 68339, `suricata`: 517890, `p0f`: 87620
+Events by source: `honeypots`: 68168, `suricata`: 514388, `p0f`: 86469
 
-_226247 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_225934 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -15,68 +15,68 @@ _226247 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `109.160.32.171` | 1474 | The Netherlands | Amsterdam | GBTCloud |
 | `77.237.239.31` | 1375 | France | Lauterbourg | Contabo GmbH |
 | `83.168.110.67` | 616 | Poland | Warsaw | SkillHost |
-| `77.91.71.90` | 592 | Israel | Tel Aviv | NEW |
 | `47.113.193.48` | 592 | China | Shenzhen | Aliyun Computing Co., LTD |
-| `77.91.71.91` | 588 | Israel | Tel Aviv | NEW |
-| `138.226.239.91` | 578 | The Netherlands | Amsterdam | Vlad Cojuhari |
-| `77.91.71.24` | 575 | Israel | Tel Aviv | NEW |
-| `185.136.15.111` | 563 | Kazakhstan | Almaty | Vlad Cojuhari |
-| `77.91.71.25` | 561 | Israel | Tel Aviv | NEW |
-| `185.136.15.82` | 559 | Kazakhstan | Almaty | Vlad Cojuhari |
-| `185.136.15.110` | 558 | Kazakhstan | Almaty | Vlad Cojuhari |
-| `77.91.71.92` | 557 | Israel | Tel Aviv | NEW |
-| `77.91.71.23` | 557 | Israel | Tel Aviv | NEW |
-| `185.136.15.81` | 554 | Kazakhstan | Almaty | Vlad Cojuhari |
-| `185.136.15.80` | 554 | Kazakhstan | Almaty | Vlad Cojuhari |
 | `198.58.117.211` | 554 | United States | Richardson | Linode |
+| `77.91.71.24` | 549 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 546 | Israel | Tel Aviv | NEW |
+| `77.91.71.91` | 542 | Israel | Tel Aviv | NEW |
+| `185.136.15.111` | 539 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `77.91.71.25` | 538 | Israel | Tel Aviv | NEW |
+| `185.136.15.110` | 536 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `77.91.71.23` | 534 | Israel | Tel Aviv | NEW |
+| `185.136.15.80` | 532 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `185.136.15.82` | 532 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `185.136.15.81` | 530 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `138.226.239.91` | 524 | The Netherlands | Amsterdam | Vlad Cojuhari |
+| `77.91.71.92` | 509 | Israel | Tel Aviv | NEW |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| Russia | 40993 |
-| The Netherlands | 23702 |
-| United States | 15161 |
-| China | 3617 |
-| Israel | 3481 |
-| France | 2893 |
-| Kazakhstan | 2877 |
-| Germany | 2486 |
-| Türkiye | 2356 |
-| Hong Kong | 1212 |
-| Poland | 1003 |
-| United Kingdom | 738 |
-| Hungary | 624 |
-| Singapore | 545 |
-| Belgium | 483 |
-| Japan | 460 |
-| Brazil | 457 |
-| Indonesia | 448 |
-| India | 433 |
-| Unknown | 432 |
+| Russia | 40999 |
+| The Netherlands | 23424 |
+| United States | 15307 |
+| China | 3912 |
+| Israel | 3270 |
+| France | 2853 |
+| Kazakhstan | 2756 |
+| Germany | 2498 |
+| Türkiye | 2358 |
+| Hong Kong | 1230 |
+| Poland | 1010 |
+| United Kingdom | 732 |
+| Hungary | 559 |
+| Belgium | 492 |
+| Singapore | 490 |
+| Japan | 469 |
+| Brazil | 467 |
+| Indonesia | 446 |
+| Vietnam | 406 |
+| Andorra | 364 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 61585 |
-| 443 | 23686 |
-| 80 | 22990 |
+| 22 | 60883 |
+| 443 | 23575 |
+| 80 | 22946 |
 | 64295 | 50 |
-| 60196 | 7 |
 | 37208 | 7 |
+| 60196 | 7 |
 | 43412 | 3 |
-| 59346 | 2 |
-| 36572 | 2 |
-| 39992 | 2 |
+| 35298 | 2 |
+| 55136 | 2 |
 | 53280 | 2 |
 | 53284 | 2 |
+| 39100 | 2 |
+| 47956 | 2 |
+| 56830 | 2 |
+| 33868 | 2 |
+| 42548 | 2 |
 | 46828 | 2 |
-| 33672 | 2 |
-| 56522 | 2 |
-| 53062 | 2 |
-| 50136 | 2 |
-| 53492 | 2 |
-| 46624 | 2 |
-| 39462 | 2 |
+| 38630 | 2 |
+| 39950 | 2 |
+| 45554 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -94,30 +94,30 @@ _226247 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `118.70.239.231` | 62 |
 | `103.72.57.129` | 45 |
 | `8.217.68.84` | 32 |
-| `94.204.5.49` | 31 |
-| `120.71.148.144` | 31 |
-| `223.243.179.70` | 31 |
+| `4.4.66.84` | 31 |
+| `50.114.172.201` | 31 |
 | `49.12.249.111` | 31 |
 | `213.215.209.101` | 31 |
-| `50.114.172.201` | 31 |
-| `4.4.66.84` | 31 |
-| `138.122.140.200` | 31 |
+| `223.243.179.70` | 31 |
+| `60.165.119.59` | 31 |
+| `120.71.148.144` | 31 |
 | `42.236.73.142` | 31 |
+| `101.47.28.226` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 12
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 55 |
-| `140.248.150.49` | 55 |
-| `146.75.30.49` | 29 |
+| `146.75.38.49` | 52 |
+| `140.248.150.49` | 51 |
+| `146.75.30.49` | 30 |
 | `185.125.188.59` | 9 |
-| `185.125.188.55` | 9 |
-| `185.125.188.57` | 9 |
 | `185.125.188.54` | 9 |
+| `185.125.188.57` | 9 |
+| `185.125.188.55` | 9 |
 | `67.202.15.124` | 8 |
-| `185.125.188.58` | 8 |
 | `185.125.188.60` | 8 |
+| `185.125.188.58` | 8 |
 | `54.234.187.186` | 6 |
 | `54.224.99.219` | 5 |
 
@@ -133,28 +133,27 @@ _None detected in this period._
 | `root` | `admin` | 18 |
 | `root` | `root` | 16 |
 | `root` | `qwerty` | 16 |
-| `root` | `ubuntu` | 15 |
 | `root` | `passwd` | 15 |
+| `root` | `ubuntu` | 14 |
 | `root` | `guest` | 14 |
-| `root` | `apache` | 13 |
 | `root` | `web` | 13 |
-| `root` | `linux` | 13 |
+| `root` | `password` | 13 |
 | `root` | `pass` | 13 |
 | `root` | `temp` | 13 |
 | `root` | `test` | 13 |
-| `root` | `password` | 13 |
-| `root` | `debian` | 12 |
-| `root` | `centos` | 12 |
-| `root` | `nginx` | 12 |
-| `root` | `mysql` | 12 |
-| `root` | `docker` | 12 |
-| `root` | `vps` | 12 |
+| `root` | `linux` | 12 |
+| `root` | `apache` | 12 |
+| `root` | `default` | 12 |
+| `root` | `system` | 12 |
+| `root` | `sys` | 12 |
+| `root` | `sysadmin` | 12 |
+| `root` | `super` | 12 |
+| `root` | `portfolio` | 12 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-10-23 | 1993 |
-| 2026-10-24 | 1794 |
+| 2026-10-24 | 1402 |
 | 2026-10-25 | 2210 |
 | 2026-10-26 | 2735 |
 | 2026-10-27 | 1735 |
@@ -182,7 +181,8 @@ _None detected in this period._
 | 2026-11-18 | 884 |
 | 2026-11-19 | 1166 |
 | 2026-11-20 | 1286 |
-| 2026-11-21 | 458 |
+| 2026-11-21 | 815 |
+| 2026-11-22 | 1165 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
