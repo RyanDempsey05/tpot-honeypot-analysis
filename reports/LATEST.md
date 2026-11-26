@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-11-25T16:29:48Z
+# T-Pot Honeypot Report - 2026-11-26T16:03:28Z
 
-Source data: `20261125T162526Z` &nbsp;|&nbsp; Total events analyzed: **669394** &nbsp;|&nbsp; Unique attacker IPs: **5848**
+Source data: `20261126T155911Z` &nbsp;|&nbsp; Total events analyzed: **662311** &nbsp;|&nbsp; Unique attacker IPs: **5847**
 
-Events by source: `honeypots`: 68698, `suricata`: 515392, `p0f`: 85304
+Events by source: `honeypots`: 68419, `suricata`: 513298, `p0f`: 80594
 
-_227536 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_226979 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -20,63 +20,63 @@ _227536 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `198.58.117.211` | 554 | United States | Richardson | Linode |
 | `91.90.83.247` | 502 | United States | Seattle | UAB code200 |
 | `43.226.39.177` | 430 | China | Haikuotiankong | Shenzhen APA Cloud Computing Co., Ltd |
-| `77.91.71.24` | 413 | Israel | Tel Aviv | NEW |
 | `47.111.170.178` | 409 | China | Hangzhou | Aliyun Computing Co., LTD |
-| `77.91.71.25` | 404 | Israel | Tel Aviv | NEW |
-| `77.91.71.90` | 402 | Israel | Tel Aviv | NEW |
-| `77.91.71.23` | 400 | Israel | Tel Aviv | NEW |
-| `185.136.15.82` | 396 | Kazakhstan | Almaty | Vlad Cojuhari |
-| `77.91.71.91` | 396 | Israel | Tel Aviv | NEW |
-| `185.136.15.111` | 395 | Kazakhstan | Almaty | Vlad Cojuhari |
-| `185.136.15.81` | 394 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `77.91.71.24` | 367 | Israel | Tel Aviv | NEW |
+| `162.0.232.217` | 365 | United States | Chicago | Namecheap, Inc. |
+| `77.91.71.25` | 358 | Israel | Tel Aviv | NEW |
+| `77.91.71.23` | 356 | Israel | Tel Aviv | NEW |
+| `77.91.71.90` | 354 | Israel | Tel Aviv | NEW |
+| `77.91.71.91` | 352 | Israel | Tel Aviv | NEW |
+| `185.136.15.111` | 351 | Kazakhstan | Almaty | Vlad Cojuhari |
+| `185.136.15.82` | 350 | Kazakhstan | Almaty | Vlad Cojuhari |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| Russia | 41008 |
-| The Netherlands | 23161 |
-| United States | 14552 |
-| France | 4199 |
-| China | 3580 |
-| Germany | 2539 |
-| Israel | 2430 |
+| Russia | 41015 |
+| The Netherlands | 23028 |
+| United States | 14859 |
+| France | 4215 |
+| China | 3524 |
+| Germany | 2518 |
 | Türkiye | 2375 |
-| Kazakhstan | 2055 |
-| Hong Kong | 1223 |
-| Poland | 1010 |
-| United Kingdom | 730 |
-| Unknown | 589 |
-| Singapore | 492 |
-| Belgium | 492 |
-| Brazil | 484 |
+| Israel | 2160 |
+| Kazakhstan | 1826 |
+| Hong Kong | 1220 |
+| Poland | 999 |
+| United Kingdom | 737 |
+| Belgium | 510 |
+| Brazil | 505 |
+| Singapore | 502 |
 | Hungary | 477 |
-| Japan | 460 |
-| Vietnam | 407 |
-| Andorra | 365 |
+| Japan | 457 |
+| Vietnam | 405 |
+| Canada | 367 |
+| Andorra | 360 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 59386 |
-| 443 | 23442 |
-| 80 | 23356 |
-| 64295 | 43 |
-| 60196 | 7 |
+| 22 | 58651 |
+| 443 | 23432 |
+| 80 | 23236 |
+| 64295 | 42 |
 | 37208 | 7 |
+| 60196 | 7 |
 | 48166 | 6 |
 | 43412 | 3 |
-| 42156 | 2 |
-| 38750 | 2 |
+| 41840 | 2 |
+| 35342 | 2 |
+| 38474 | 2 |
+| 48486 | 2 |
+| 57642 | 2 |
 | 39950 | 2 |
 | 45554 | 2 |
-| 33672 | 2 |
-| 56522 | 2 |
-| 53062 | 2 |
-| 50136 | 2 |
-| 53492 | 2 |
-| 46624 | 2 |
-| 39462 | 2 |
-| 45524 | 2 |
+| 42156 | 2 |
+| 58978 | 2 |
+| 36572 | 2 |
+| 33868 | 2 |
+| 47956 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -96,28 +96,28 @@ _227536 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `118.70.239.231` | 62 |
 | `103.72.57.129` | 45 |
 | `8.217.68.84` | 32 |
-| `50.114.172.201` | 31 |
-| `120.71.148.144` | 31 |
 | `42.236.73.142` | 31 |
-| `60.165.119.59` | 31 |
+| `4.4.66.84` | 31 |
+| `50.114.172.201` | 31 |
 | `49.12.249.111` | 31 |
 | `213.215.209.101` | 31 |
-| `4.4.66.84` | 31 |
+| `138.122.140.200` | 31 |
+| `94.204.5.49` | 31 |
 
 **Likely port-scan sources** (>= 5 distinct ports touched): 11
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 35 |
-| `140.248.150.49` | 28 |
+| `146.75.38.49` | 37 |
+| `140.248.150.49` | 26 |
 | `146.75.30.49` | 24 |
-| `185.125.188.59` | 9 |
-| `185.125.188.55` | 9 |
-| `185.125.188.57` | 9 |
 | `185.125.188.54` | 9 |
-| `185.125.188.58` | 8 |
+| `185.125.188.59` | 9 |
+| `185.125.188.57` | 9 |
+| `185.125.188.55` | 9 |
 | `185.125.188.60` | 8 |
-| `67.202.15.124` | 7 |
+| `185.125.188.58` | 8 |
+| `67.202.15.124` | 6 |
 | `54.234.187.186` | 6 |
 
 ## Malware Families Detected
@@ -128,32 +128,31 @@ _None detected in this period._
 ## Top Credential Pairs Attempted
 | Username | Password | Attempts |
 |---|---|---:|
-| `root` | `123456` | 26 |
-| `root` | `admin` | 19 |
-| `root` | `root` | 17 |
-| `root` | `qwerty` | 16 |
-| `root` | `ubuntu` | 16 |
-| `root` | `passwd` | 15 |
-| `root` | `linux` | 14 |
-| `root` | `debian` | 13 |
-| `root` | `web` | 13 |
-| `root` | `guest` | 13 |
-| `root` | `centos` | 12 |
-| `root` | `apache` | 12 |
-| `root` | `password` | 12 |
-| `root` | `pass` | 12 |
-| `root` | `temp` | 12 |
-| `root` | `test` | 12 |
-| `root` | `nginx` | 11 |
-| `root` | `mysql` | 11 |
-| `root` | `docker` | 11 |
-| `root` | `vps` | 11 |
+| `root` | `123456` | 25 |
+| `root` | `admin` | 18 |
+| `root` | `root` | 16 |
+| `root` | `ubuntu` | 15 |
+| `root` | `qwerty` | 15 |
+| `root` | `passwd` | 14 |
+| `root` | `linux` | 13 |
+| `root` | `guest` | 12 |
+| `root` | `web` | 12 |
+| `root` | `debian` | 12 |
+| `root` | `` | 11 |
+| `root` | `password` | 11 |
+| `root` | `apache` | 11 |
+| `root` | `centos` | 11 |
+| `root` | `pass` | 11 |
+| `root` | `temp` | 11 |
+| `root` | `test` | 11 |
+| `root` | `nginx` | 10 |
+| `root` | `mysql` | 10 |
+| `root` | `docker` | 10 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-10-27 | 1361 |
-| 2026-10-28 | 6846 |
+| 2026-10-28 | 6602 |
 | 2026-10-29 | 1567 |
 | 2026-10-30 | 1709 |
 | 2026-10-31 | 1728 |
@@ -181,7 +180,8 @@ _None detected in this period._
 | 2026-11-22 | 1463 |
 | 2026-11-23 | 922 |
 | 2026-11-24 | 1095 |
-| 2026-11-25 | 3146 |
+| 2026-11-25 | 3376 |
+| 2026-11-26 | 501 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
