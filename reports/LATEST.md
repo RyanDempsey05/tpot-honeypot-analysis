@@ -1,10 +1,10 @@
-# T-Pot Honeypot Report - 2026-11-27T15:52:37Z
+# T-Pot Honeypot Report - 2026-11-28T14:47:53Z
 
-Source data: `20261127T154804Z` &nbsp;|&nbsp; Total events analyzed: **631502** &nbsp;|&nbsp; Unique attacker IPs: **5849**
+Source data: `20261128T144329Z` &nbsp;|&nbsp; Total events analyzed: **631127** &nbsp;|&nbsp; Unique attacker IPs: **5847**
 
-Events by source: `honeypots`: 64971, `suricata`: 493163, `p0f`: 73368
+Events by source: `honeypots`: 65155, `suricata`: 493208, `p0f`: 72764
 
-_223720 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
+_223513 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) excluded from the metrics below._
 
 ## Top Attacking IPs
 | IP | Events | Country | City | Org/ASN |
@@ -14,6 +14,7 @@ _223720 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `80.91.71.147` | 2282 | Türkiye | Istanbul | Hostlayici Internet ve Bilisim Hizmetleri |
 | `164.68.122.8` | 2134 | France | Lauterbourg | Contabo GmbH |
 | `109.160.32.171` | 1474 | The Netherlands | Amsterdam | GBTCloud |
+| `93.152.209.6` | 661 | China | Haidian | Dedik Services Limited |
 | `83.168.110.67` | 616 | Poland | Warsaw | SkillHost |
 | `47.113.193.48` | 592 | China | Shenzhen | Aliyun Computing Co., LTD |
 | `198.58.117.211` | 554 | United States | Richardson | Linode |
@@ -21,62 +22,61 @@ _223720 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `43.226.39.177` | 426 | China | Haikuotiankong | Shenzhen APA Cloud Computing Co., Ltd |
 | `47.111.170.178` | 409 | China | Hangzhou | Aliyun Computing Co., LTD |
 | `162.0.232.217` | 365 | United States | Chicago | Namecheap, Inc. |
-| `93.152.209.6` | 350 | China | Haidian | Dedik Services Limited |
 | `125.39.11.27` | 350 | China | Tianjin |  |
 | `180.76.228.8` | 344 | China | Beijing | Beijing Baidu Netcom Science and Technology Co., Ltd. |
 | `5.253.235.91` | 340 | United States | Washington | Packethub S.A |
 | `47.251.165.65` | 333 | United States | Minkler | Alibaba Cloud - US |
-| `77.91.71.24` | 323 | Israel | Tel Aviv | NEW |
-| `138.226.239.233` | 318 | The Netherlands | Amsterdam | Vlad Cojuhari |
 | `8.217.99.120` | 315 | Hong Kong | Hong Kong | Alibaba.com Singapore E-Commerce Private Limited |
+| `138.226.239.233` | 308 | The Netherlands | Amsterdam | Vlad Cojuhari |
+| `138.226.239.234` | 282 | The Netherlands | Amsterdam | Vlad Cojuhari |
 
 ## Top Countries
 | Country | Events |
 |---|---:|
-| Russia | 41018 |
-| The Netherlands | 18553 |
-| United States | 14627 |
-| France | 3556 |
-| China | 3523 |
-| Germany | 2488 |
-| Türkiye | 2377 |
-| Israel | 1890 |
-| Kazakhstan | 1597 |
-| Hong Kong | 1187 |
-| Poland | 985 |
-| United Kingdom | 742 |
-| Brazil | 522 |
-| Belgium | 507 |
-| Singapore | 492 |
-| Hungary | 478 |
-| Japan | 449 |
-| Andorra | 373 |
-| Canada | 368 |
-| Vietnam | 303 |
+| Russia | 41013 |
+| The Netherlands | 18435 |
+| United States | 14606 |
+| China | 3851 |
+| France | 3530 |
+| Germany | 2463 |
+| Türkiye | 2378 |
+| Israel | 1619 |
+| Kazakhstan | 1369 |
+| Hong Kong | 1215 |
+| Poland | 984 |
+| United Kingdom | 759 |
+| Brazil | 539 |
+| Singapore | 490 |
+| Belgium | 483 |
+| Hungary | 472 |
+| Japan | 450 |
+| Canada | 405 |
+| Andorra | 371 |
+| Vietnam | 307 |
 
 ## Top Targeted Ports
 | Port | Events |
 |---|---:|
-| 22 | 57775 |
-| 443 | 23327 |
-| 80 | 18082 |
+| 22 | 57152 |
+| 443 | 23341 |
+| 80 | 18411 |
 | 64295 | 41 |
-| 37208 | 7 |
 | 60196 | 7 |
+| 37208 | 7 |
 | 48166 | 6 |
-| 34156 | 2 |
-| 58978 | 2 |
-| 38750 | 2 |
-| 42024 | 2 |
-| 54810 | 2 |
-| 38474 | 2 |
-| 41840 | 2 |
+| 55958 | 2 |
 | 33672 | 2 |
 | 56522 | 2 |
 | 53062 | 2 |
 | 50136 | 2 |
 | 53492 | 2 |
 | 46624 | 2 |
+| 39462 | 2 |
+| 45524 | 2 |
+| 56556 | 2 |
+| 35438 | 2 |
+| 43412 | 2 |
+| 46608 | 2 |
 
 ## Attack Patterns
 **Likely brute-force sources** (>= 5 auth attempts): 20
@@ -96,21 +96,21 @@ _223720 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `118.70.239.231` | 62 |
 | `8.217.68.84` | 32 |
 | `50.114.172.201` | 31 |
-| `4.4.66.84` | 31 |
-| `42.236.73.142` | 31 |
 | `138.122.140.200` | 31 |
-| `60.165.119.59` | 31 |
-| `101.47.28.226` | 31 |
 | `94.204.5.49` | 31 |
+| `101.47.28.226` | 31 |
+| `42.236.73.142` | 31 |
+| `4.4.66.84` | 31 |
+| `49.72.111.25` | 30 |
 | `47.111.170.178` | 29 |
 
-**Likely port-scan sources** (>= 5 distinct ports touched): 11
+**Likely port-scan sources** (>= 5 distinct ports touched): 12
 
 | IP | Distinct Ports |
 |---|---:|
-| `146.75.38.49` | 37 |
+| `146.75.38.49` | 39 |
 | `140.248.150.49` | 26 |
-| `146.75.30.49` | 24 |
+| `146.75.30.49` | 22 |
 | `185.125.188.59` | 9 |
 | `185.125.188.55` | 9 |
 | `185.125.188.57` | 9 |
@@ -119,6 +119,7 @@ _223720 event(s) from allowlisted IPs (`analysis.ignore_ips` in config.yaml) exc
 | `185.125.188.60` | 8 |
 | `67.202.15.124` | 6 |
 | `54.234.187.186` | 5 |
+| `100.48.216.11` | 5 |
 
 ## Malware Families Detected
 _Detected via Suricata alert signature matching - see docs/METHODOLOGY.md for caveats._
@@ -131,29 +132,28 @@ _None detected in this period._
 | `root` | `123456` | 22 |
 | `root` | `admin` | 16 |
 | `root` | `root` | 14 |
-| `root` | `qwerty` | 13 |
 | `root` | `ubuntu` | 13 |
+| `root` | `qwerty` | 13 |
 | `root` | `passwd` | 12 |
 | `root` | `linux` | 11 |
 | `root` | `` | 11 |
 | `root` | `debian` | 10 |
 | `root` | `web` | 10 |
 | `root` | `guest` | 10 |
-| `root` | `pass` | 9 |
 | `root` | `centos` | 9 |
 | `root` | `apache` | 9 |
 | `root` | `password` | 9 |
+| `root` | `pass` | 9 |
 | `root` | `temp` | 9 |
 | `root` | `test` | 9 |
-| `pi` | `raspberry` | 8 |
-| `root` | `1qaz@WSX3edc` | 8 |
 | `root` | `nginx` | 8 |
+| `root` | `mysql` | 8 |
+| `root` | `docker` | 8 |
 
 ## Timeline (daily)
 | Date | Events |
 |---|---:|
-| 2026-10-29 | 1190 |
-| 2026-10-30 | 1709 |
+| 2026-10-30 | 1374 |
 | 2026-10-31 | 1728 |
 | 2026-11-01 | 2953 |
 | 2026-11-02 | 2422 |
@@ -181,7 +181,8 @@ _None detected in this period._
 | 2026-11-24 | 1095 |
 | 2026-11-25 | 3376 |
 | 2026-11-26 | 774 |
-| 2026-11-27 | 537 |
+| 2026-11-27 | 880 |
+| 2026-11-28 | 903 |
 
 ---
 _Generated automatically by `scripts/analyze_logs.py`. See `scripts/generate_dashboard.py` for a chart-based HTML view of this same data._
